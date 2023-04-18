@@ -1,0 +1,233 @@
+@import url("https://fonts.cdnfonts.com/css/circular-std");
+@import url("https://fonts.cdnfonts.com/css/circular-std");
+@font-face {
+  font-family: "CustomFont";
+  src: url(../assets/font/Product\ Sans\ Regular.otf);
+}
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+.wrapper {
+  max-width: 1400px;
+  width: 100%;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+body {
+  background-color: #181825;
+  font-family: "CustomFont", sans-serif;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.navbar {
+  height: 150px;
+  padding: 20px;
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: auto;
+  filter: blur(0.5);
+  display: flex;
+  justify-content: space-between;
+}
+.navbar .brand {
+  font-size: 40px;
+}
+.navbar .navlist {
+  display: flex;
+  align-items: flex-start;
+}
+.navbar .navlist .navlink i {
+  font-size: 18px;
+  margin-right: 4px;
+}
+.navbar .navlist .navlink span {
+  font-size: 18px;
+}
+
+.header {
+  position: relative;
+  height: auto;
+  padding: 30px 30px 40px;
+  border-bottom: 1.5px solid #2f2f45;
+}
+.header .header-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -100;
+  background: url(https://global-uploads.webflow.com/6336e79cd8d43cd4d1230849/637fd5c110a8ac83b18b8738_stars.svg);
+}
+.header .header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.header .header-container__content {
+  padding-top: 50px;
+  width: 50%;
+}
+.header .header-container__content h3 {
+  font-size: 30px;
+}
+.header .header-container__content h1 {
+  font-size: 50px;
+  font-weight: 900;
+}
+.header .header-container__content .text-animation-block {
+  height: 75.5px;
+  margin-bottom: 15px;
+}
+.header .header-container__content .ityped {
+  display: inline-block;
+  font-size: 45px;
+  font-weight: 900;
+  border-bottom: 4px solid #6966ff;
+}
+.header .header-container__image {
+  width: 45%;
+}
+.header .header-container__image img {
+  width: 100%;
+  height: 100%;
+}
+
+.section-video {
+  padding: 30px;
+  border-bottom: 1.5px solid #2f2f45;
+}
+.section-video .card-list {
+  margin: 30px;
+  display: flex;
+  overflow-x: scroll;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none;
+  scroll-snap-type: x mandatory;
+}
+.section-video .card-list::-webkit-scrollbar {
+  display: none;
+}
+.section-video .card-list .card {
+  margin: 20px;
+  width: 100%;
+  height: 100%;
+  max-width: 22rem;
+  min-width: 18rem;
+  background-color: #232334;
+  border: 1.5px solid #2f2f45;
+  padding: 0.75rem;
+}
+.section-video .card-list .card .card-content {
+  margin: 8px;
+}
+.section-video .card-list .card .card-content h3 {
+  font-size: 25px;
+}
+.section-video .card-list .card .card-action {
+  margin-top: 18px;
+}
+.section-video .card-list .card .card-action a {
+  width: 105px;
+}
+.section-video .card-list .card .card-action a i {
+  margin-right: 10px;
+}
+.section-video .card-list .card .card-img-block {
+  width: 100%;
+  overflow: hidden;
+}
+.section-video .card-list .card .card-img-block img {
+  width: 100%;
+}
+
+.section-about {
+  padding: 30px;
+  border-bottom: 1.5px solid #2f2f45;
+}
+.section-about .about-us__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.section-about .about-us__content .about-us__text {
+  width: 65%;
+  color: rgb(188, 185, 185);
+  line-height: 25px;
+}
+.section-about .about-us__content .img-tiktok {
+  width: 30%;
+  border-radius: 15px;
+  overflow: hidden;
+}
+.section-about .about-us__content .img-tiktok img {
+  width: 100%;
+  height: 100%;
+}
+
+.section-why {
+  padding: 30px;
+  padding-top: 15px;
+}
+.section-why h1 {
+  margin-bottom: 16px;
+}
+.section-why .why__text {
+  margin-left: 10px;
+  color: rgb(188, 185, 185);
+}
+.section-why .why__text span {
+  font-size: 18px;
+}
+
+.text-purple {
+  background-image: linear-gradient(43deg, rgb(65, 88, 208) 0%, rgb(200, 80, 192) 46%, rgb(255, 204, 112) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-white {
+  color: white;
+}
+
+.text-deco {
+  color: rgb(229, 220, 220);
+}
+
+.text-title {
+  font-size: 40px;
+  font-weight: 900;
+  background-image: linear-gradient(43deg, rgb(65, 88, 208) 0%, rgb(200, 80, 192) 46%, rgb(255, 204, 112) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.btn {
+  max-width: 150px;
+  cursor: pointer;
+  color: #c8c7d8;
+  background-color: #232334;
+  border: 1.5px solid #2f2f45;
+  border-radius: 0.5rem;
+  margin-right: 0.75rem;
+  padding: 0.5rem 1rem;
+  transition: all 0.3s;
+  display: flex;
+  align-items: center;
+}
+
+/*# sourceMappingURL=styles.css.map */
