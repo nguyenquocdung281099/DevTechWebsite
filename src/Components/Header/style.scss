@@ -1,0 +1,53 @@
+
+.navbar {
+  margin: 0 auto;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  display: flex;
+  justify-content: space-between;
+  max-width: 1400px;
+  overflow: hidden;
+  padding: 20px;
+  background-color: rgba(24,24,37,.65);
+  filter: blur(0.5);
+  
+  .brand {
+    font-size: 40px;
+  }
+
+  .navlist {
+    display: flex;
+    align-items: flex-start;
+
+    .navlink {
+      i {
+        font-size: 18px;
+        margin-right: 4px;
+      }
+
+      span {
+        font-size: 18px;
+      }
+    }
+
+    @media only screen and (max-width: 1024px) {
+      flex-direction: column;
+      .navlink {
+        margin: 15px;
+      }
+    }
+  }
+
+  .navbar-icon {
+    display: none;
+    img {
+      width: 50px;
+      cursor: pointer;
+    }
+    @media only screen and (max-width: 1024px) {
+      display: block;
+    }
+  }
+}

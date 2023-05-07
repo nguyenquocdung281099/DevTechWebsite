@@ -1,0 +1,356 @@
+@import url("https://fonts.cdnfonts.com/css/circular-std");
+@import url("https://fonts.cdnfonts.com/css/circular-std");
+
+@font-face {
+  font-family: "CustomFont";
+  src: url(../../assets/font/Regular.otf);
+}
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+.wrapper {
+  max-width: 1400px;
+  width: 100%;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+body {
+  background-color: #181825;
+  font-family: "CustomFont", sans-serif;
+  font-size: 18px;
+  line-height: 1.5;
+
+  .ityped-cursor {
+    font-size: 2.2rem;
+    opacity: 1;
+    -webkit-animation: blink 0.3s infinite;
+    -moz-animation: blink 0.3s infinite;
+    animation: blink 0.3s infinite;
+    animation-direction: alternate;
+  }
+
+  @keyframes blink {
+    100% {
+      opacity: 0;
+    }
+  }
+
+  @-webkit-keyframes blink {
+    100% {
+      opacity: 0;
+    }
+  }
+
+  @-moz-keyframes blink {
+    100% {
+      opacity: 0;
+    }
+  }
+}
+
+.header {
+  position: relative;
+  height: auto;
+  padding: 30px 30px 40px;
+  border-bottom: 1.5px solid #2f2f45;
+
+  .header-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -100;
+    background: url(https://global-uploads.webflow.com/6336e79cd8d43cd4d1230849/637fd5c110a8ac83b18b8738_stars.svg);
+  }
+
+  .header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    &__content {
+      padding-top: 50px;
+      width: 50%;
+      h3 {
+        font-size: 30px;
+      }
+      h1 {
+        font-size: 50px;
+        font-weight: 900;
+      }
+      .text-animation-block {
+        height: 75.5px;
+        margin-bottom: 15px;
+      }
+      .ityped {
+        display: inline-block;
+        font-size: 45px;
+        font-weight: 900;
+        border-bottom: 4px solid #6966ff;
+      }
+    }
+
+    &__image {
+      width: 45%;
+
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+}
+
+.section-video {
+  padding: 30px;
+
+  .card-list {
+    margin: 30px;
+    display: flex;
+    overflow-x: scroll;
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none;
+    scroll-snap-type: x mandatory;
+
+    .card {
+      margin: 20px;
+      width: 100%;
+      height: 100%;
+      max-width: 22rem;
+      min-width: 18rem;
+      background-color: #232334;
+      border: 1.5px solid #2f2f45;
+      padding: 0.75rem;
+      .card-content {
+        margin: 8px;
+        h3 {
+          font-size: 25px;
+        }
+      }
+      .card-action {
+        margin-top: 18px;
+        a {
+          // width: 1;
+          i {
+            margin-right: 10px;
+          }
+        }
+      }
+
+      .card-img-block {
+        width: 100%;
+        overflow: hidden;
+
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+  border-bottom: 1.5px solid #2f2f45;
+}
+
+.section-about {
+  padding: 30px;
+  .about-us__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .about-us__text {
+      width: 65%;
+      color: rgb(188, 185, 185);
+      line-height: 25px;
+    }
+
+    .img-tiktok {
+      width: 30%;
+      border-radius: 15px;
+      overflow: hidden;
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+  border-bottom: 1.5px solid #2f2f45;
+}
+
+.block {
+  padding: 30px;
+  padding-top: 15px;
+}
+
+.section-why {
+  h2 {
+    margin-bottom: 16px;
+  }
+
+  h5 {
+    font-size: 23px;
+  }
+
+  .why-wrapper {
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .img-wrapper {
+      width: 30%;
+
+      img {
+        width: 100%;
+      }
+    }
+    .why__text {
+      width: 65%;
+      color: rgb(188, 185, 185);
+
+      span {
+        font-size: 18px;
+      }
+    }
+  }
+}
+
+.course-list {
+  .card {
+    margin: 20px;
+    width: 100%;
+    height: 100%;
+    max-width: 22rem;
+    min-width: 18rem;
+    background-color: #232334;
+    border: 1.5px solid #2f2f45;
+    padding: 0.75rem;
+    .card-content {
+      margin: 8px;
+      h3 {
+        font-size: 25px;
+      }
+    }
+    .card-action {
+      margin-top: 18px;
+      a {
+        width: 180px;
+        max-width: 200px;
+        i {
+          margin-right: 10px;
+        }
+      }
+    }
+
+    .card-img-block {
+      width: 100%;
+      overflow: hidden;
+
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
+
+// global
+
+.text-purple {
+  background-image: linear-gradient(
+    43deg,
+    rgb(65, 88, 208) 0%,
+    rgb(200, 80, 192) 46%,
+    rgb(255, 204, 112) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-white {
+  color: #e5dcdc;
+}
+
+.text-deco {
+  color: rgb(229, 220, 220);
+}
+
+.text-title {
+  font-size: 40px;
+  font-weight: 900;
+  background-image: linear-gradient(
+    43deg,
+    rgb(65, 88, 208) 0%,
+    rgb(200, 80, 192) 46%,
+    rgb(255, 204, 112) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.btn {
+  max-width: 150px;
+  cursor: pointer;
+  color: #c8c7d8;
+  background-color: #232334;
+  border: 1.5px solid #2f2f45;
+  border-radius: 0.5rem;
+  margin-right: 0.75rem;
+  padding: 0.5rem 1rem;
+  transition: all 0.3s;
+  display: flex;
+  align-items: center;
+}
+
+.text-important {
+  background: #8a2387; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #f27121,
+    #e94057,
+    #8a2387
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #f27121,
+    #e94057,
+    #8a2387
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 900;
+}
+
+.btn-register {
+  max-width: 250px;
+  background: #8a2387; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #f27121,
+    #e94057,
+    #8a2387
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #f27121,
+    #e94057,
+    #8a2387
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: white;
+  border-radius: 8px;
+  padding: 8px 16px;
+  font-size: 16px;
+  margin: 16px;
+}

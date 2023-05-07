@@ -1,0 +1,195 @@
+.header-course {
+  position: relative;
+  height: auto;
+  padding: 30px 30px 40px;
+  border-bottom: 1.5px solid #2f2f45;
+
+  .header-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -100;
+    background: url(https://global-uploads.webflow.com/6336e79cd8d43cd4d1230849/637fd5c110a8ac83b18b8738_stars.svg);
+  }
+
+  .header-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    h3 {
+      font-size: 25px;
+      font-weight: 900;
+      text-transform: uppercase;
+      // padding: 18px 50px;
+    }
+
+    h2 {
+      padding: 18px 50px;
+      font-size: 50px;
+      font-weight: 900;
+      text-align: center;
+      line-height: 1.25;
+    }
+
+    p {
+      width: 50%;
+    }
+
+    img {
+      width: 65%;
+    }
+  }
+
+  .price {
+    margin: 18px 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    h2 {
+      font-size: 30px;
+    }
+
+    .text-price {
+      font-size: 25px;
+    }
+
+    .price-course {
+      font-size: 35px;
+    }
+  }
+}
+
+.target-course {
+  .target-list {
+    display: flex;
+    flex-wrap: wrap;
+
+    .card {
+      margin: 10px;
+      width: 100%;
+      height: 300px;
+      width: 270px;
+      background-color: #232334;
+      border: 1.5px solid #2f2f45;
+      padding: 0.75rem;
+      .card-content {
+        margin: 8px;
+        h3 {
+          font-size: 20px;
+        }
+        h6 {
+          font-size: 16px;
+        }
+      }
+
+      .card-img-block {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        overflow: hidden;
+
+        img {
+          width: 50%;
+        }
+      }
+
+      &:hover {
+        transform: scale(1.02);
+        transition: transform 0.5s;
+        box-shadow: 3px 3px 25px #707080;
+      }
+    }
+  }
+}
+
+.benefit-course {
+  .benefit-text {
+    margin-left: 10px;
+    h3 {
+      font-size: 25px;
+      img {
+        width: 30px;
+        display: inline-block;
+      }
+    }
+
+    .list-learn {
+      list-style: none;
+
+      li {
+        display: flex;
+        align-items: center;
+        margin: 16px 0;
+      }
+      img {
+        width: 30px;
+        display: inline;
+        margin-right: 16px;
+      }
+    }
+  }
+  .data-benefit {
+    margin: 50px;
+    display: flex;
+    .data-item {
+      width: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      h1 {
+        font-weight: 900;
+        font-size: 70px;
+        color: white;
+        margin-right: 20px;
+      }
+
+      h6 {
+        font-size: 30px;
+      }
+    }
+  }
+}
+
+.method-block {
+  .method-content {
+    padding: 12px 0;
+    margin-left: 10px;
+    display: flex;
+    justify-content: space-between;
+
+    .method-text {
+      width: 60%;
+      h3 {
+        margin-top: 12px;
+      }
+      .Advantages {
+        li {
+          display: flex;
+          align-items: center;
+          margin: 16px 0;
+        }
+        img {
+          width: 30px;
+          display: inline;
+          margin-right: 16px;
+        }
+      }
+    }
+    img {
+      width: 35%;
+    }
+  }
+}
+
+.who-block {
+  p {
+    margin: 24px 6px;
+    font-size: 20px;
+  }
+}
