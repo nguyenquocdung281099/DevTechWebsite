@@ -7,15 +7,31 @@ import CourseReactImg from "../../assets/react-course.jpg";
 import AdvantagesImg from "../../assets/Advantages.jpg";
 import { dataLearn, targetList } from "../../constants";
 import TimeLine from "./components/Timeline";
-
+import { Helmet } from "react-helmet";
+import { useEffect } from "react";
 export default function CourseDetail() {
+
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
+  
   return (
     <div className="wrapper">
+      <Helmet>
+        <meta charSet="utf-8" />
+        <meta
+      name="description"
+      content="lập trình website tốt nhất Đà Nẵng, lập trình Frontend, Lập trình Reactjs, Lập trình VueJS"
+    />
+    <title>Lập trình Frontend chuyên sâu - từ cơ bản đến nâng cao</title>
+
+      </Helmet>
+
       <header class="header-course">
         <div class="header-container">
-          <h3 className="text-purple">
-            KHÓA HỌC FRONTEND từ cơ bản đến nâng cao
-          </h3>
+          <h2 className="text-purple">
+            KHÓA HỌC FRONTEND CHUYÊN SÂU
+          </h2>
           <p className="text-white text-center">
             Bạn là một sinh viên IT chưa có định hướng cho riêng mình ? <br />
             Bạn là một người trái nghành đang bơ vơ giữa muôn vàn lí tưởng ? Vậy
@@ -39,9 +55,9 @@ export default function CourseDetail() {
               <span className="price-course text-important">4,500,000</span>
               <sup>đ</sup>/khóa
             </h2> */}
-            <button className="btn btn-register">
+            <a className="btn btn-register" href="https://forms.gle/yiinh7cNabz1VLds9" target="_blank" rel="noreferrer">
               Đăng kí tham gia khóa học
-            </button>
+            </a>
           </div>
           <img src={CourseReactImg} alt="Khóa học Frontend/Reactjs" />
         </div>
@@ -93,24 +109,24 @@ export default function CourseDetail() {
           <div className="data-item">
             <h2>48+</h2>
             <h6>
-              Buổi học <br />
-              trực tiếp/Online với Mentor
+             <p> Buổi học</p>
+              <p>trực tiếp/Online với Mentor</p>
             </h6>
           </div>
           <div className="data-item">
             <h2>100+</h2>
             <h6>
-              Học Viên đã đăng kí <br />
+              <p>Học Viên đã đăng kí </p>
+              <p>
               và có việc làm
+              </p>
             </h6>
           </div>
         </div>
       </section>
       <section className="content-course-block block">
-        <h2 className="text-title">
-        Nội dung khóa học Frontend Chuyên Sâu
-        </h2>
-        <TimeLine/>
+        <h2 className="text-title">Nội dung khóa học Frontend Chuyên Sâu</h2>
+        <TimeLine />
       </section>
       <section className="method-block block">
         <h2 className="text-title">Phương pháp Giảng Dạy</h2>

@@ -2,14 +2,31 @@ import "./style.scss";
 import headerImg from "../../assets/header-image.png";
 import myTiktokImg from "../../assets/my-tiktok.jpg";
 import cardBannerImg from "../../assets/card.png";
+import cardTiktokImg from "../../assets/bannerTiktok.png";
 import CourseReactImg from "../../assets/react-course.jpg";
 import userImg from "../../assets/user.jpg";
 import Typewriter from "typewriter-effect";
-import { Link } from "react-router-dom";
+import { Link } from "@reach/router";
+import { Helmet } from "react-helmet";
+import { tiktokList } from "../../constants";
+import { useEffect } from "react";
 
 export default function HomePage() {
+
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, []);
+
   return (
     <>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <meta
+          name="description"
+          content="lập trình website tốt nhất Đà Nẵng, lập trình Frontend, Lập trình Reactjs, Lập trình VueJS"
+        />
+        <title>DevFe Edu - Đào tạo, Mentor lập trình</title>
+      </Helmet>
       <div className="wrapper">
         <header class="header">
           <div class="header-container">
@@ -78,10 +95,10 @@ export default function HomePage() {
                 phần cứng khô khan, thời sinh viên mình gắn liền với những cái
                 vi xử lý, những con diot, điện trở, biến trở, những cuộn chì
                 hàn... và những dòng code cực buồn chán C/C++ và đôi khi là
-                matlab để vẽ sóng, nhận tín hiệu chán đến tận cổ, bởi
-                vậy chính những thứ đó đã đưa mình đến quyết định là phải thay
-                đổi định hướng, chính là bước vào con đường IT và cụ thể hơn
-                chính là Lập trình Website.
+                matlab để vẽ sóng, nhận tín hiệu chán đến tận cổ, bởi vậy chính
+                những thứ đó đã đưa mình đến quyết định là phải thay đổi định
+                hướng, chính là bước vào con đường IT và cụ thể hơn chính là Lập
+                trình Website.
                 <br />
                 Tôi chắc rằng, thời điểm đó của tôi cũng bế tắc, chưa biết bắt
                 đầu từ đâu, trong khi lên mạng đầy rẫy những tài liệu, NHƯNG vấn
@@ -90,8 +107,8 @@ export default function HomePage() {
                 ít tuổi hơn học đúng chuyên ngành !?
               </h6>
               <h5 class="text-purple">
-                Vì vậy DevFe cũng như tôi, có mặt ở đây để trở thành mentor
-                của các bạn, chỉ dẫn các bạn cách học, hướng học để bạn đi nhanh
+                Vì vậy DevFe cũng như tôi, có mặt ở đây để trở thành mentor của
+                các bạn, chỉ dẫn các bạn cách học, hướng học để bạn đi nhanh
                 nhất qua những bài giảng trực tiếp, qua meeting chứ không phải
                 video có sẵn
               </h5>
@@ -113,73 +130,40 @@ export default function HomePage() {
                 </h3>
               </div>
               <div class="card-action">
-                <Link to='course/react-chuyen-sau'  class="btn">
+                <Link to="course/react-chuyen-sau" class="btn">
                   <i class="fas fa-play text-white"></i>Chi tiết khóa học
                 </Link>
               </div>
             </div>
           </div>
         </section>
+        <section className="section-video block" id='video'>
+          <h2 className="text-title text-white">Video Tiktok phổ biến</h2>
 
-        <section class="section-video block">
-          <h2 class="text-title text-white">Video Tiktok phổ biến</h2>
-
-          <div class="card-list">
-            <div class="card text-white">
-              <div class="card-img-block">
-                <img src={cardBannerImg} alt="" class="card-img" />
+          <div className="card-list">
+            {tiktokList.map((item) => (
+              <div key={item.label} className="card text-white">
+                <div className="card-img-block">
+                  <img src={cardTiktokImg} alt="" className="card-img" />
+                </div>
+                <div className="card-content">
+                  <h3>{item.label}</h3>
+                </div>
+                <div className="card-action">
+                  <a
+                    className="btn"
+                    href={item.url}
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <i className="fas fa-play text-white"></i>View video
+                  </a>
+                  <div>
+                    {item.view} <i class="fas fa-eye"></i>
+                  </div>
+                </div>
               </div>
-              <div class="card-content">
-                <h3>How to create Input text animation by only CSS</h3>
-              </div>
-              <div class="card-action">
-                <a class="btn">
-                  <i class="fas fa-play text-white"></i>View video
-                </a>
-              </div>
-            </div>
-
-            <div class="card text-white">
-              <div class="card-img-block">
-                <img src={cardBannerImg} alt="" class="card-img" />
-              </div>
-              <div class="card-content">
-                <h3>How to create Input text animation by only CSS</h3>
-              </div>
-              <div class="card-action">
-                <a class="btn">
-                  <i class="fas fa-play text-white"></i>View video
-                </a>
-              </div>
-            </div>
-
-            <div class="card text-white">
-              <div class="card-img-block">
-                <img src={cardBannerImg} alt="" class="card-img" />
-              </div>
-              <div class="card-content">
-                <h3>How to create Input text animation by only CSS</h3>
-              </div>
-              <div class="card-action">
-                <a class="btn">
-                  <i class="fas fa-play text-white"></i>View video
-                </a>
-              </div>
-            </div>
-
-            <div class="card text-white">
-              <div class="card-img-block">
-                <img src={cardBannerImg} alt="" class="card-img" />
-              </div>
-              <div class="card-content">
-                <h3>How to create Input text animation by only CSS</h3>
-              </div>
-              <div class="card-action">
-                <a class="btn">
-                  <i class="fas fa-play text-white"></i>View video
-                </a>
-              </div>
-            </div>
+            ))}
           </div>
         </section>
       </div>

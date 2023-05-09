@@ -1,7 +1,9 @@
 import "./style.scss";
-import navbarIcon from "../../assets/bar.svg";
-import { Link } from "react-router-dom";
+import { Link } from "@reach/router";
+import { useState } from "react";
 export default function Header() {
+  const [isActivenavBar, setIsActiveNavBar] = useState();
+  const classNavList = isActivenavBar ? "navlist" : "navlist inactive";
   return (
     <nav class="navbar">
       <Link class="brand" to={"/"}>
@@ -9,15 +11,25 @@ export default function Header() {
         <span class="text-white">Edu</span>
       </Link>
       <div className="navbar-icon">
-        <img src={navbarIcon} alt="" />
+        <label
+          for="check"
+          onClick={() => {
+            setIsActiveNavBar(document.getElementById('check').checked);
+          }}
+        >
+          <input type="checkbox" id="check" checked={isActivenavBar}/>
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
       </div>
-      <div class="navlist">
-        <Link to="/course/ii" class="navlink btn">
+      <div class={classNavList} onClick={() => setIsActiveNavBar(false)}>
+        <Link to="/course/react-chuyen-sau" class="navlink btn">
           <span>Course</span>
         </Link>
-        <Link to={"/#video"} class="navlink btn">
+        <a href={"/#video"} class="navlink btn">
           <span>Videos</span>
-        </Link>
+        </a>
         <Link to="/blog" class="navlink btn">
           <span>Blog</span>
         </Link>

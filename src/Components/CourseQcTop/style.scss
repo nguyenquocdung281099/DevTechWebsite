@@ -1,0 +1,26 @@
+.course_qc_wrapper {
+  height: 50px;
+  width: 100%;
+  background: linear-gradient(139deg, #fb8817, #ff4b01, #c12127, #e02aff);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  span {
+    text-transform: uppercase;
+
+    a {
+      text-transform: none;
+      text-decoration: underline;
+    }
+
+
+  @media only screen and (max-width: 650px) {
+    font-size: 14px;
+  }
+  @media only screen and (max-width: 500px) {
+    font-size: 11px;
+    text-transform: unset;
+  }
+  }
+}
