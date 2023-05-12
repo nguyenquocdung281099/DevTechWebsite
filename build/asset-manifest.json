@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.42e3c32b.css",
-    "main.js": "/static/js/main.2ed9f4df.js",
+    "main.css": "/static/css/main.a33836f4.css",
+    "main.js": "/static/js/main.e11c6648.js",
     "static/media/user.jpg": "/static/media/user.be9c4be27ff3bd95626d.jpg",
     "static/media/bannerTiktok.png": "/static/media/bannerTiktok.e985ddc9663f46c9c6b5.png",
     "static/media/Advantages.jpg": "/static/media/Advantages.c409d5f66324c36ff343.jpg",
@@ -16,11 +16,11 @@
     "static/media/react.svg": "/static/media/react.10cc989e5112bbc80afa32af6456e859.svg",
     "static/media/quote.svg": "/static/media/quote.6224afbed64645b1a38f6ad5b9795bda.svg",
     "static/media/tick-done.svg": "/static/media/tick-done.ba0d6a2fe8a3cc61aac9d74d7cbbb8ad.svg",
-    "main.42e3c32b.css.map": "/static/css/main.42e3c32b.css.map",
-    "main.2ed9f4df.js.map": "/static/js/main.2ed9f4df.js.map"
+    "main.a33836f4.css.map": "/static/css/main.a33836f4.css.map",
+    "main.e11c6648.js.map": "/static/js/main.e11c6648.js.map"
   },
   "entrypoints": [
-    "static/css/main.42e3c32b.css",
-    "static/js/main.2ed9f4df.js"
+    "static/css/main.a33836f4.css",
+    "static/js/main.e11c6648.js"
   ]
 }

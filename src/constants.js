@@ -40,23 +40,25 @@ export const tiktokList = [
   {
     label: "Cách xây dựng UI master",
     url: "https://www.tiktok.com/@devfe68/video/7213313508354657562",
-    view: '50.5k'
+    view: "50.5k",
+    img: "https://p16-sign-va.tiktokcdn.com/tos-maliva-p-0068/oEdIEHh02MotD5kgCTxJGgoEzNAhfgBDqAAyII~tplv-f5insbecw7-1:480:480.jpeg?x-expires=1683892800&x-signature=hVHHDRiySL%2BdFlDblTdG%2FBfFRyM%3D",
   },
   {
     label: "Lập trình với threeJS",
     url: "https://www.tiktok.com/@devfe68/video/7221832055833775366",
-    view: '55.2k'
-
+    view: "55.2k",
+    img: 'https://p77-sign-va.tiktokcdn.com/tos-useast2a-p-0037-aiso/oo1C6DfnQUYBuT2ebBkVDBALEmaUnGImttCEpP~tplv-dmt-logom:tos-useast2a-pv-0037-aiso/e54243d4d88f48d2a153c6522f2148df.image?x-expires=1683892800&x-signature=fGEpT%2FcUtCt5jemSgn7%2BXf2I3lI%3D'
   },
   {
     label: "Lazy loading cho image",
     url: "https://www.tiktok.com/@devfe68/video/7150625948994473243",
-    view: '68.5k'
-
+    view: "68.5k",
+    img:"https://p77-sign-va.tiktokcdn.com/tos-useast2a-p-0037-aiso/7ce942c591b04d92847cd69c105ba1e0~tplv-f5insbecw7-1:480:480.jpeg?x-expires=1683892800&x-signature=L4aGLW%2FJV04yTaALmtcBbqbUfIE%3D"
   },
   {
     label: "Sức mạnh của CSS",
     url: "https://www.tiktok.com/@devfe68/video/7169163714585824539",
-    view: '43.5k'
-    },
+    view: "43.5k",
+    img: "https://p77-sign-va.tiktokcdn.com/tos-useast2a-p-0037-aiso/o4KFee4efgnNI3aLAeyDwDYrATYf3Y0QcoABl3~tplv-f5insbecw7-1:480:480.jpeg?x-expires=1683892800&x-signature=uA4f71qvSqhaCuaWLIVdRUH4VvQ%3D",
+  },
 ];

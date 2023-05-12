@@ -152,7 +152,8 @@ body {
 
 .section-video {
   padding: 30px;
-
+  position: relative;
+  z-index: 3;
   .card-list {
     margin: 30px;
     display: flex;

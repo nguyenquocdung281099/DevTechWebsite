@@ -51,11 +51,13 @@
 		background: #9393b1;
 		border-radius: 5px;
 		cursor: pointer;
+		z-index: 5;
 	}
 
 	::-webkit-scrollbar {
 		width: 5px;
 		height: 5px;
+		cursor: pointer;
 	}
 
 	.text-center {

@@ -151,7 +151,7 @@ export default function HomePage({
                 <div key={item.label} className="card text-white">
                   <div className="card-img-block">
                     <img
-                      src={cardTiktokImg}
+                      src={item.img || cardTiktokImg}
                       alt="Card_video"
                       className="card-img"
                     />
