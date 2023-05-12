@@ -224,7 +224,6 @@
         -webkit-text-decoration-skip: objects;
       }
       a:hover {
-        color: #0056b3;
         text-decoration: underline;
       }
       a:not([href]):not([tabindex]) {
@@ -372,6 +371,7 @@
       }
       a,
       body,
+      canvas,
       div,
       h1,
       h2,
@@ -407,16 +407,28 @@
       ul {
         list-style: none;
       }
-      .navbar .brand:hover,
       a {
-        text-decoration: none;
+        position: relative;
+        z-index: 6;
       }
       #root,
       body {
         background-color: #181825;
       }
-      .footer {
+      .canvas-bg {
+        bottom: 0;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 2;
+      }
+      .footer,
+      a:hover {
         color: #fff;
+      }
+      .footer {
+        border-top: 1.5px solid #2f2f45;
         height: 100px;
         padding: 10px;
         text-align: center;
@@ -431,7 +443,7 @@
         width: 40px;
       }
       .navbar {
-        background-color: rgba(24, 24, 37, 0.65);
+        background-color: rgba(24, 24, 37, 0.989);
         display: flex;
         -webkit-filter: blur(0.5);
         filter: blur(0.5);
@@ -446,6 +458,10 @@
       }
       .navbar .brand {
         font-size: 40px;
+      }
+      .navbar .brand:hover,
+      a {
+        text-decoration: none;
       }
       .navbar .navlist {
         align-items: flex-start;
@@ -472,6 +488,7 @@
           transition: transform 0.4s;
           transition: transform 0.4s, -webkit-transform 0.4s;
           width: 45%;
+          z-index: 11;
         }
         .navbar .navlist .navlink {
           margin: 15px;
@@ -632,9 +649,7 @@
           width: 100%;
         }
       }
-      .section-about,
       .section-video {
-        border-bottom: 1.5px solid #2f2f45;
         padding: 30px;
       }
       .section-video .card-list {
@@ -691,6 +706,10 @@
           max-width: 17rem;
           min-width: 15rem;
         }
+      }
+      .section-about {
+        border-bottom: 1.5px solid #2f2f45;
+        padding: 30px;
       }
       .section-about .about-us__content {
         align-items: center;
@@ -856,6 +875,7 @@
         left: 25px;
         position: fixed;
         top: 35%;
+        width: 0;
         z-index: 1000;
       }
       .social ul {
@@ -915,7 +935,7 @@
         rel="stylesheet" /><link
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
         rel="stylesheet" /><link
-        href="/static/css/main.32a0fb30.css"
+        href="/static/css/main.42e3c32b.css"
         rel="stylesheet"
     /></noscript>
     <link
@@ -937,7 +957,7 @@
       onload="this.rel='stylesheet'"
     />
     <link
-      href="/static/css/main.32a0fb30.css"
+      href="/static/css/main.42e3c32b.css"
       rel="preload"
       as="style"
       onload="this.rel='stylesheet'"
@@ -1019,7 +1039,7 @@
                 </div>
                 <div class="header-container__image">
                   <img
-                    alt=""
+                    alt="header_img"
                     src="/static/media/header-image.0c318c0ce8bb469d4e38.png"
                   />
                 </div>
@@ -1043,7 +1063,7 @@
                 </div>
                 <div class="img-tiktok">
                   <img
-                    alt="kenh tiktok cua toi"
+                    alt="my_tiktok"
                     src="/static/media/my-tiktok.676827e4df618b6ad635.jpg"
                   />
                 </div>
@@ -1054,12 +1074,14 @@
               <div class="why-wrapper">
                 <div class="img-wrapper">
                   <img
-                    alt="user coding"
+                    alt="user_coding"
                     src="/static/media/user.be9c4be27ff3bd95626d.jpg"
                   />
                 </div>
                 <div class="why__text">
-                  <h6 class="text-purple">TÔI LÀ MỘT DEVELOPER TRÁI NGÀNH !</h6>
+                  <h5 class="text-purple">
+                    MÌNH LÀ MỘT DEVELOPER TRÁI NGÀNH !
+                  </h5>
                   <h6>
                     Đúng vậy ! Mình xuất phát điểm không phải là dân IT, mình
                     học ngành kĩ thuật máy tính tại ĐHBK Đà Nẵng, phần lớn mình
@@ -1069,19 +1091,19 @@
                     và đôi khi là matlab để vẽ sóng, nhận tín hiệu chán đến tận
                     cổ, bởi vậy chính những thứ đó đã đưa mình đến quyết định là
                     phải thay đổi định hướng, chính là bước vào con đường IT và
-                    cụ thể hơn chính là Lập trình Website.<br />Tôi chắc rằng,
-                    thời điểm đó của tôi cũng bế tắc, chưa biết bắt đầu từ đâu,
+                    cụ thể hơn chính là Lập trình Website.<br />Mình chắc rằng,
+                    thời điểm đó của mình cũng bế tắc, chưa biết bắt đầu từ đâu,
                     trong khi lên mạng đầy rẫy những tài liệu, NHƯNG vấn đề ở
                     đây là đọc cái gì, đi theo hướng nào, đi thế nào để nhanh
                     hơn, để cạnh tranh với các bạn cùng trang lứa hay có thể các
                     bạn ít tuổi hơn học đúng chuyên ngành !?
                   </h6>
-                  <h5 class="text-purple">
-                    Vì vậy DevFe cũng như tôi, có mặt ở đây để trở thành mentor
+                  <h6 class="text-purple">
+                    Vì vậy DevFe cũng như mình, có mặt ở đây để trở thành mentor
                     của các bạn, chỉ dẫn các bạn cách học, hướng học để bạn đi
                     nhanh nhất qua những bài giảng trực tiếp, qua meeting chứ
                     không phải video có sẵn
-                  </h5>
+                  </h6>
                 </div>
               </div>
             </section>
@@ -1091,7 +1113,7 @@
                 <div class="card text-white">
                   <div class="card-img-block">
                     <img
-                      alt=""
+                      alt="Card_course"
                       src="/static/media/react-course.0d839a5acbd31eddfd9b.jpg"
                       class="card-img"
                     />
@@ -1116,7 +1138,7 @@
                 <div class="card text-white">
                   <div class="card-img-block">
                     <img
-                      alt=""
+                      alt="Card_video"
                       src="/static/media/bannerTiktok.e985ddc9663f46c9c6b5.png"
                       class="card-img"
                     />
@@ -1138,7 +1160,7 @@
                 <div class="card text-white">
                   <div class="card-img-block">
                     <img
-                      alt=""
+                      alt="Card_video"
                       src="/static/media/bannerTiktok.e985ddc9663f46c9c6b5.png"
                       class="card-img"
                     />
@@ -1158,7 +1180,7 @@
                 <div class="card text-white">
                   <div class="card-img-block">
                     <img
-                      alt=""
+                      alt="Card_video"
                       src="/static/media/bannerTiktok.e985ddc9663f46c9c6b5.png"
                       class="card-img"
                     />
@@ -1180,7 +1202,7 @@
                 <div class="card text-white">
                   <div class="card-img-block">
                     <img
-                      alt=""
+                      alt="Card_video"
                       src="/static/media/bannerTiktok.e985ddc9663f46c9c6b5.png"
                       class="card-img"
                     />
@@ -1206,15 +1228,16 @@
           <div>
             <a href="https://react.dev/" rel="noreferrer" target="_blank"
               ><img
-                alt="reactJs - framework javascript"
+                alt="reactJs_framework_javascript"
                 src="/static/media/react.10cc989e5112bbc80afa32af6456e859.svg" /></a
             ><a href="https://nextjs.org/" rel="noreferrer" target="_blank"
               ><img
-                alt="NextJs - framework javascript"
+                alt="NextJs_framework_javascript"
                 src="/static/media/nextjs.7d83bd409d884165f4fc2a9892d9d88d.svg"
             /></a>
           </div>
         </div>
+        <canvas class="canvas-bg" height="850" width="480"></canvas>
       </div>
     </div>
     <script type="text/javascript">
@@ -1306,6 +1329,6 @@
         }
       })(this);
     </script>
-    <script src="./static/js/main.31842095.js"></script>
+    <script src="./static/js/main.2ed9f4df.js"></script>
   </body>
 </html>

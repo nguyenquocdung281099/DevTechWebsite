@@ -8,10 +8,10 @@ export default function Footer() {
       <p>Copyright © 2023 DevFe - DevFE</p>
       <div>
         <a href="https://react.dev/" target="_blank" rel="noreferrer">
-          <img src={ReactIcon} alt="reactJs - framework javascript" />
+          <img src={ReactIcon} alt="reactJs_framework_javascript" />
         </a>
         <a href="https://nextjs.org/" target="_blank" rel="noreferrer">
-          <img src={NextIcon} alt="NextJs - framework javascript" />
+          <img src={NextIcon} alt="NextJs_framework_javascript" />
         </a>
       </div>
     </div>
