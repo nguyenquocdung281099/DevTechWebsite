@@ -1,15 +1,1907 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta content="width=device-width,initial-scale=1" name="viewport"><meta content="#000000" name="theme-color"><link href="/logo-color.png" rel="apple-touch-icon"><link href="/logo-color.png" rel="shortcut icon" type="image/x-icon"><link href="/manifest.json" rel="manifest"><title>Lập trình Frontend chuyên sâu - từ cơ bản đến nâng cao</title><meta content="DevFe Edu - Đào tạo, Mentor lập trình" name="title"><meta content="trung tâm dạy lập trình website tốt nhất Đà Nẵng, lập trình Frontend chuyên sâu, Lập trình Reactjs, Lập trình VueJS, Nơi đào tạo Developer chuyên nghiệp, DevFe một bloger, tiktoker, developer Frontend" name="description"><meta content="website" property="og:type"><meta content="https://metatags.io/" property="og:url"><meta content="DevFe Edu - Đào tạo, Mentor lập trình" property="og:title"><meta content="trung tâm dạy lập trình website tốt nhất Đà Nẵng, lập trình Frontend chuyên sâu, Lập trình Reactjs, Lập trình VueJS, Nơi đào tạo Developer chuyên nghiệp, DevFe một bloger, tiktoker, developer Frontend" property="og:description"><meta content="/logo-color.png" property="og:image"><meta content="summary_large_image" property="twitter:card"><meta content="https://metatags.io/" property="twitter:url"><meta content="DevFe Edu - Đào tạo, Mentor lập trình" property="twitter:title"><meta content="trung tâm dạy lập trình website tốt nhất Đà Nẵng, lập trình Frontend chuyên sâu, Lập trình Reactjs, Lập trình VueJS, Nơi đào tạo Developer chuyên nghiệp, DevFe một bloger, tiktoker, developer Frontend" property="twitter:description"><meta content="/logo-color.png" property="twitter:image"><meta charset="UTF-8"><meta content=" Frontend, ReactJs, NextJs, VueJs, DevFe, Mentor IT, Mentor Lập trình, Frontend, lập trình Frontend, lập trình Reactjs chuyên sâu" name="keywords"><meta content="trung tâm dạy lập trình website tốt nhất Đà Nẵng, lập trình Frontend chuyên sâu, Lập trình Reactjs, Lập trình VueJS, Nơi đào tạo Developer chuyên nghiệp, DevFe một bloger, tiktoker, developer Frontend" name="description"><meta content="DevFe-edu" name="copyright"><meta content="ES" name="language"><meta content="index,follow" name="robots"><meta content="Sunday, July 18th, 2010, 5:15 pm" name="revised"><meta content="" name="abstract"><meta content="IT, công nghệ thông tin" name="topic"><meta content="DevFe-edu nơi đào tạo, mentor Developer chuyên nghiệp từ cơ bản đến nâng cao" name="summary"><meta content="DevFe-edu nơi đào tạo, mentor Developer chuyên nghiệp từ cơ bản đến nâng cao" name="pagename"><meta content="Lập trình, IT, Frontend, ReactJs, NextJs, VueJs" name="category"><meta content="Worldwide" name="coverage"><meta content="Global" name="distribution"><meta content="General" name="rating"><meta content="all" name="target"><meta content="True" name="HandheldFriendly"><meta content="320" name="MobileOptimized"><meta content="May. 5, 2023" name="date"><meta content="2023-05-05" name="search_date"><meta content=" Frontend, ReactJs, NextJs, VueJs" name="DC.title"><meta content=" Frontend, ReactJs, NextJs, VueJs" name="ResourceLoaderDynamicStyles"><meta content="blog" name="medium"><meta content="dV1r/ZJJdDEI++fKJ6iDEl6o+TMNtSu0kv18ONeqM0I=" name="verify-v1"><meta content="1e39c508e0d87750" name="y_key"><meta content=" Frontend, ReactJs, NextJs, VueJs" itemprop="name"><meta content="no-cache" http-equiv="Pragma"><meta content="no-cache" http-equiv="Cache-Control"><meta content="no" http-equiv="imagetoolbar"><meta content="off" http-equiv="x-dns-prefetch-control"><meta content="dUFhD3tJlWTCD2R3PCDmy5ivBqqGXfTHuH3aW4nyaqg" name="google-site-verification"><meta content="F50EdC2zFRRbV7wVf3gkAR8U8mZAUqr2uPUgpQkIMxM" name="google-site-verification"><link href="https://cdnjs.cloudflare.com" rel="preconnect"><meta charset="utf-8" data-react-helmet="true"><meta content="lập trình website tốt nhất Đà Nẵng, lập trình Frontend, Lập trình Reactjs, Lập trình VueJS" name="description" data-react-helmet="true"><link href="https://fonts.cdnfonts.com" rel="preconnect"><link href="https://global-uploads.webflow.com" rel="preconnect"><style type="text/css">/*!
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width,initial-scale=1" name="viewport" />
+    <meta content="#000000" name="theme-color" />
+    <link href="/logo-color.png" rel="apple-touch-icon" />
+    <link href="/logo-color.png" rel="shortcut icon" type="image/x-icon" />
+    <link href="/manifest.json" rel="manifest" />
+    <title>Lập trình Frontend chuyên sâu - từ cơ bản đến nâng cao</title>
+    <meta content="DevFe Edu - Đào tạo, Mentor lập trình" name="title" />
+    <meta
+      content="trung tâm dạy lập trình website tốt nhất Đà Nẵng, lập trình Frontend chuyên sâu, Lập trình Reactjs, Lập trình VueJS, Nơi đào tạo Developer chuyên nghiệp, DevFe một bloger, tiktoker, developer Frontend"
+      name="description"
+    />
+    <meta content="website" property="og:type" />
+    <meta content="https://metatags.io/" property="og:url" />
+    <meta content="DevFe Edu - Đào tạo, Mentor lập trình" property="og:title" />
+    <meta
+      content="trung tâm dạy lập trình website tốt nhất Đà Nẵng, lập trình Frontend chuyên sâu, Lập trình Reactjs, Lập trình VueJS, Nơi đào tạo Developer chuyên nghiệp, DevFe một bloger, tiktoker, developer Frontend"
+      property="og:description"
+    />
+    <meta content="/logo-color.png" property="og:image" />
+    <meta content="summary_large_image" property="twitter:card" />
+    <meta content="https://metatags.io/" property="twitter:url" />
+    <meta
+      content="DevFe Edu - Đào tạo, Mentor lập trình"
+      property="twitter:title"
+    />
+    <meta
+      content="trung tâm dạy lập trình website tốt nhất Đà Nẵng, lập trình Frontend chuyên sâu, Lập trình Reactjs, Lập trình VueJS, Nơi đào tạo Developer chuyên nghiệp, DevFe một bloger, tiktoker, developer Frontend"
+      property="twitter:description"
+    />
+    <meta content="/logo-color.png" property="twitter:image" />
+    <meta charset="UTF-8" />
+    <meta
+      content=" Frontend, ReactJs, NextJs, VueJs, DevFe, Mentor IT, Mentor Lập trình, Frontend, lập trình Frontend, lập trình Reactjs chuyên sâu"
+      name="keywords"
+    />
+    <meta
+      content="trung tâm dạy lập trình website tốt nhất Đà Nẵng, lập trình Frontend chuyên sâu, Lập trình Reactjs, Lập trình VueJS, Nơi đào tạo Developer chuyên nghiệp, DevFe một bloger, tiktoker, developer Frontend"
+      name="description"
+    />
+    <meta content="DevFe-edu" name="copyright" />
+    <meta content="ES" name="language" />
+    <meta content="index,follow" name="robots" />
+    <meta content="Sunday, July 18th, 2010, 5:15 pm" name="revised" />
+    <meta content="" name="abstract" />
+    <meta content="IT, công nghệ thông tin" name="topic" />
+    <meta
+      content="DevFe-edu nơi đào tạo, mentor Developer chuyên nghiệp từ cơ bản đến nâng cao"
+      name="summary"
+    />
+    <meta
+      content="DevFe-edu nơi đào tạo, mentor Developer chuyên nghiệp từ cơ bản đến nâng cao"
+      name="pagename"
+    />
+    <meta
+      content="Lập trình, IT, Frontend, ReactJs, NextJs, VueJs"
+      name="category"
+    />
+    <meta content="Worldwide" name="coverage" />
+    <meta content="Global" name="distribution" />
+    <meta content="General" name="rating" />
+    <meta content="all" name="target" />
+    <meta content="True" name="HandheldFriendly" />
+    <meta content="320" name="MobileOptimized" />
+    <meta content="May. 5, 2023" name="date" />
+    <meta content="2023-05-05" name="search_date" />
+    <meta content=" Frontend, ReactJs, NextJs, VueJs" name="DC.title" />
+    <meta
+      content=" Frontend, ReactJs, NextJs, VueJs"
+      name="ResourceLoaderDynamicStyles"
+    />
+    <meta content="blog" name="medium" />
+    <meta
+      content="dV1r/ZJJdDEI++fKJ6iDEl6o+TMNtSu0kv18ONeqM0I="
+      name="verify-v1"
+    />
+    <meta content="1e39c508e0d87750" name="y_key" />
+    <meta content=" Frontend, ReactJs, NextJs, VueJs" itemprop="name" />
+    <meta content="no-cache" http-equiv="Pragma" />
+    <meta content="no-cache" http-equiv="Cache-Control" />
+    <meta content="no" http-equiv="imagetoolbar" />
+    <meta content="off" http-equiv="x-dns-prefetch-control" />
+    <meta
+      content="dUFhD3tJlWTCD2R3PCDmy5ivBqqGXfTHuH3aW4nyaqg"
+      name="google-site-verification"
+    />
+    <meta
+      content="F50EdC2zFRRbV7wVf3gkAR8U8mZAUqr2uPUgpQkIMxM"
+      name="google-site-verification"
+    />
+    <link href="https://cdnjs.cloudflare.com" rel="preconnect" />
+    <meta charset="utf-8" data-react-helmet="true" />
+    <meta
+      content="lập trình website tốt nhất Đà Nẵng, lập trình Frontend, Lập trình Reactjs, Lập trình VueJS"
+      name="description"
+      data-react-helmet="true"
+    />
+    <link href="https://fonts.cdnfonts.com" rel="preconnect" />
+    <link href="https://global-uploads.webflow.com" rel="preconnect" />
+    <style type="text/css">
+      /*!
  * Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com
  * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
- *//*!
+ */ /*!
  * Bootstrap v4.1.3 (https://getbootstrap.com/)
  * Copyright 2011-2018 The Bootstrap Authors
  * Copyright 2011-2018 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
- *//*!
+ */ /*!
  *  Font Awesome 4.7.0 by @davegandy - http://fontawesome.io - @fontawesome
  *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
- */.fa,.fab{line-height:1}.fab{-moz-osx-font-smoothing:grayscale;-webkit-font-smoothing:antialiased;display:inline-block;font-style:normal;font-variant:normal;text-rendering:auto;font-family:"Font Awesome 5 Brands";font-weight:400}.fa-tiktok:before{content:"\e07b"}@font-face{font-family:"Font Awesome 5 Brands";font-style:normal;font-weight:400;font-display:block;src:url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/webfonts/fa-brands-400.eot);src:url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/webfonts/fa-brands-400.eot?#iefix) format("embedded-opentype"),url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/webfonts/fa-brands-400.woff2) format("woff2"),url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/webfonts/fa-brands-400.woff) format("woff"),url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/webfonts/fa-brands-400.ttf) format("truetype"),url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/webfonts/fa-brands-400.svg#fontawesome) format("svg")}*{box-sizing:border-box}html{line-height:1.15;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;-ms-overflow-style:scrollbar;-webkit-tap-highlight-color:transparent}@-ms-viewport{width:device-width}body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";font-size:1rem;color:#212529;text-align:left}[tabindex="-1"]:focus{outline:0!important}h1,h2,h3,h6{margin-bottom:.5rem;line-height:1.2;color:inherit}p,ul{margin-bottom:1rem}sup{position:relative;font-size:75%;line-height:0;vertical-align:baseline;top:-.5em}a{color:#007bff;background-color:transparent;-webkit-text-decoration-skip:objects}a:hover{text-decoration:underline}a:not([href]):not([tabindex]){color:inherit;text-decoration:none}a:not([href]):not([tabindex]):focus,a:not([href]):not([tabindex]):hover{color:inherit;text-decoration:none}a:not([href]):not([tabindex]):focus{outline:0}label{display:inline-block;margin-bottom:.5rem}input{margin:0;font-family:inherit;font-size:inherit;line-height:inherit;overflow:visible}input[type=checkbox]{box-sizing:border-box;padding:0}h1{font-size:2.5rem}h2{font-size:2rem}h3{font-size:1.75rem}h6{font-size:1rem}.container{width:100%;padding-right:15px;padding-left:15px;margin-right:auto;margin-left:auto}@media (min-width:576px){.container{max-width:540px}}@media (min-width:768px){.container{max-width:720px}}@media (min-width:992px){.container{max-width:960px}}@media (min-width:1200px){.container{max-width:1140px}}.row{display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;margin-right:-15px;margin-left:-15px}.col{position:relative;width:100%;min-height:1px;padding-right:15px;padding-left:15px;-ms-flex-preferred-size:0;flex-basis:0;-ms-flex-positive:1;flex-grow:1;max-width:100%}.btn{display:inline-block;font-weight:400;text-align:center;white-space:nowrap;vertical-align:middle;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;font-size:1rem;line-height:1.5}@media screen and (prefers-reduced-motion:reduce){.btn{transition:none}}.btn:focus,.btn:hover{text-decoration:none}.btn:focus{outline:0;box-shadow:0 0 0 .2rem rgba(0,123,255,.25)}.btn:disabled{opacity:.65}.btn:not(:disabled):not(.disabled){cursor:pointer}.card,.navbar{position:relative;display:-ms-flexbox}.navbar{-ms-flex-wrap:wrap;flex-wrap:wrap;-ms-flex-align:center;align-items:center;-ms-flex-pack:justify;padding:.5rem 1rem}.card{display:flex;-ms-flex-direction:column;flex-direction:column;min-width:0;word-wrap:break-word;background-color:#fff;background-clip:border-box;border:1px solid rgba(0,0,0,.125);border-radius:.25rem}.card-img{width:100%;border-radius:calc(.25rem - 1px)}.mt-5{margin-top:3rem!important}.text-center{text-align:center!important}.text-white{color:#fff!important}@font-face{font-family:FontAwesome;src:url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/fonts/fontawesome-webfont.eot?v=4.7.0);src:url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/fonts/fontawesome-webfont.eot?#iefix&v=4.7.0) format('embedded-opentype'),url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/fonts/fontawesome-webfont.woff2?v=4.7.0) format('woff2'),url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/fonts/fontawesome-webfont.woff?v=4.7.0) format('woff'),url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/fonts/fontawesome-webfont.ttf?v=4.7.0) format('truetype'),url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular) format('svg');font-weight:400;font-style:normal}.fa{display:inline-block;font:14px/1 FontAwesome;font-size:inherit;text-rendering:auto;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.fa-heart:before{content:"\f004"}.fa-cog:before{content:"\f013"}.fa-facebook:before{content:"\f09a"}.fa-globe:before{content:"\f0ac"}.fa-users:before{content:"\f0c0"}.fa-rocket:before{content:"\f135"}.fa-instagram:before{content:"\f16d"}.fa-apple:before{content:"\f179"}a,body,canvas,div,h1,h2,h3,h6,header,html,i,img,label,li,nav,p,section,span,ul{border:0;font:inherit;margin:0;padding:0;vertical-align:initial}header,nav,section{display:block}body{font-family:CustomFont,sans-serif;line-height:1.5}ul{list-style:none}a{position:relative;z-index:6}#root,body{background-color:#181825}.canvas-bg{bottom:0;height:100%;position:fixed;top:0;width:100%;z-index:2}.footer,a:hover{color:#fff}.footer{border-top:1.5px solid #2f2f45;height:100px;padding:10px;text-align:center}.footer div{align-items:center;display:flex;justify-content:center}.footer div img{margin:8px;width:40px}.navbar{background-color:rgba(24,24,37,.989);display:flex;-webkit-filter:blur(.5);filter:blur(.5);justify-content:space-between;margin:0 auto;max-width:1400px;padding:20px;position:-webkit-sticky;position:sticky;top:0;z-index:10}.navbar .brand{font-size:40px}.navbar .brand:hover,a{text-decoration:none}.navbar .navlist{align-items:flex-start;display:flex;-webkit-transform:translateX(0);transform:translateX(0)}.navbar .navlist .navlink span,body{font-size:18px}@media only screen and (max-width:992px){.navbar .navlist{background-color:#000;bottom:0;flex-direction:column;height:100vh;left:0;padding:50px 0;position:absolute;top:0;-webkit-transform:translateX(0);transform:translateX(0);transition:transform .4s;transition:transform .4s,-webkit-transform .4s;width:45%;z-index:11}.navbar .navlist .navlink{margin:15px;max-width:none;text-align:center;width:80%}.navbar .inactive{-webkit-transform:translateX(-500px);transform:translateX(-500px)}}.navbar .navbar-icon,.navbar .navbar-icon input[type=checkbox]{display:none}@media only screen and (max-width:992px){.navbar .navbar-icon{display:block}}.navbar .navbar-icon label{cursor:pointer;display:flex;flex-direction:column;width:45px}.navbar .navbar-icon label span{background:#fff;border-radius:10px;height:5px;margin:5px 0;transition:.4s cubic-bezier(.68,-.6,.32,1.6)}.navbar .navbar-icon span:first-of-type{width:50%}.navbar .navbar-icon span:nth-of-type(2){width:100%}.navbar .navbar-icon span:nth-of-type(3){width:75%}.navbar .navbar-icon input[type=checkbox]:checked~span:first-of-type{-webkit-transform:rotate(45deg) translate(7px,1px);transform:rotate(45deg) translate(7px,1px);-webkit-transform-origin:bottom;transform-origin:bottom}.navbar .navbar-icon input[type=checkbox]:checked~span:nth-of-type(2){-webkit-transform:rotate(-45deg);transform:rotate(-45deg);-webkit-transform-origin:top;transform-origin:top}.navbar .navbar-icon input[type=checkbox]:checked~span:nth-of-type(3){-webkit-transform:translate(19px,-10px) rotate(45deg);transform:translate(19px,-10px) rotate(45deg);-webkit-transform-origin:bottom;transform-origin:bottom;width:50%}.header-course{border-bottom:1.5px solid #2f2f45;height:auto;padding:30px 30px 40px;position:relative}.header-course .header-background{background:url(https://global-uploads.webflow.com/6336e79cd8d43cd4d1230849/637fd5c110a8ac83b18b8738_stars.svg);bottom:0;left:0;position:absolute;right:0;top:0;z-index:-100}.header-course .header-container,.header-course .price{align-items:center;display:flex;flex-direction:column;justify-content:center}.header-course .header-container h2{font-size:50px;font-weight:900;line-height:1.25;padding:18px 50px;text-align:center}@media only screen and (max-width:684px){.header-course .header-container h2{padding:18px 15px}.header-course .header-container h2.text-price{font-size:30px}}.header-course .header-container p,.target-course .target-list .card .card-img-block img{width:50%}.header-course .header-container img{width:65%}.header-course .price{margin:18px 0;text-align:center}.benefit-course .data-benefit .data-item h6,.header-course .price h1{font-size:30px}.benefit-course .benefit-text h3,.header-course .price .text-price{font-size:25px}.header-course .price .price-course{font-size:35px}@media only screen and (max-width:992px){.header-course .header-container p{width:100%}.header-course .header-container h2{font-size:40px}}.target-course .target-list{display:flex;justify-content:space-between}.target-course .target-list .card{background-color:#232334;border:1.5px solid #2f2f45;height:330px;margin:10px;padding:.75rem;width:300px}.target-course .target-list .card .card-content{margin:8px}.target-course .target-list .card .card-content h3,.who-block p{font-size:20px}.target-course .target-list .card .card-content h6{font-size:16px}.target-course .target-list .card .card-img-block{display:flex;justify-content:center;overflow:hidden;width:100%}.target-course .target-list .card:hover{box-shadow:3px 3px 25px #707080;-webkit-transform:scale(1.02);transform:scale(1.02);transition:transform .5s;transition:transform .5s,-webkit-transform .5s}@media only screen and (max-width:992px){.target-course .target-list{flex-wrap:wrap;justify-content:space-between}.target-course .target-list .card{width:280px}}@media only screen and (max-width:684px){.target-course .target-list{justify-content:space-evenly}.target-course .target-list .card{width:400px}}.benefit-course .benefit-text{margin-left:10px}.benefit-course .benefit-text h3 img{display:inline-block;width:30px}.benefit-course .benefit-text .list-learn{list-style:none}.benefit-course .benefit-text .list-learn li,.method-block .method-content .method-text .Advantages li{align-items:center;display:flex;margin:16px 0}.benefit-course .benefit-text .list-learn img,.method-block .method-content .method-text .Advantages img{display:inline;margin-right:16px;width:30px}.benefit-course .data-benefit{display:flex;margin:50px}.benefit-course .data-benefit .data-item{align-items:center;display:flex;justify-content:center;width:50%}.benefit-course .data-benefit .data-item h2{color:#fff;font-size:70px;font-weight:900;margin-right:20px}@media only screen and (max-width:992px){.benefit-course .data-benefit{align-items:center;flex-direction:column;margin:50px 20px}.benefit-course .data-benefit .data-item{justify-content:normal;width:80%}.benefit-course .data-benefit .data-item h2{font-size:50px;width:150px}.benefit-course .data-benefit .data-item h6{font-size:20px;width:calc(100% - 150px)}}@media only screen and (max-width:608px){.benefit-course .data-benefit .data-item{width:100%}.benefit-course .data-benefit .data-item h2{width:30%}.benefit-course .data-benefit .data-item h6{width:70%}}@media only screen and (max-width:492px){.benefit-course .data-benefit .data-item{width:100%}.benefit-course .data-benefit .data-item h2{font-size:35px;width:30%}.benefit-course .data-benefit .data-item h6{font-size:16px;width:70%}}.method-block .method-content{display:flex;justify-content:space-between;margin-left:10px;padding:12px 0}.method-block .method-content .method-text{width:60%}.method-block .method-content .method-text h3{margin-top:12px}.method-block .method-content img{width:35%}@media only screen and (max-width:992px){.method-block .method-content{align-items:center;flex-direction:column}.method-block .method-content .method-text{width:100%}.method-block .method-content img{width:70%}}@media only screen and (max-width:684px){.method-block .method-content img{width:90%}}.who-block p{margin:24px 6px}.main-timeline{font-family:tahoma;padding:20px 0;position:relative}.main-timeline:after,.main-timeline:before{background-color:#e7e7e7;border:10px solid #303334;border-radius:50%;content:"";height:40px;left:50%;position:absolute;-webkit-transform:translatex(-50%);transform:translatex(-50%);width:40px;z-index:2}.main-timeline:before{top:-15px}.main-timeline:after{bottom:15px;top:auto}.main-timeline .timeline{margin-top:-30px;padding:35px 0;position:relative;z-index:1}.main-timeline .timeline:after,.main-timeline .timeline:before{border:15px solid #46b2bc;border-radius:110px 0 0 110px;border-right:none;content:"";height:100%;position:absolute;width:50%;z-index:-1}.main-timeline .timeline:before{left:0;top:0}.main-timeline .timeline:after{border-color:#65c7d0;height:calc(100% - 30px);left:12px;top:15px;width:calc(50% - 12px)}.main-timeline .timeline-content{display:inline-block}.main-timeline .timeline-content:hover{text-decoration:none}.main-timeline .timeline-year{font-size:50px;font-weight:600;left:10%;-webkit-transform:translatey(-50%);transform:translatey(-50%)}.main-timeline .timeline-icon,.main-timeline .timeline-year{color:#65c7d0;display:inline-block;position:absolute;top:50%}.main-timeline .timeline-icon{font-size:70px;left:34%;-webkit-transform:translateY(-50%);transform:translateY(-50%)}.main-timeline .content{color:#909090;display:inline-block;float:right;padding:12px;width:50%}.main-timeline .title{color:#65c7d0;font-size:20px;font-weight:600;margin:0 0 5px;text-transform:uppercase}.main-timeline .description{font-size:15px;margin:0}.main-timeline .timeline:nth-child(2n):before{border:15px solid red;border-left:none;border-radius:0 110px 110px 0;left:auto;right:0}.main-timeline .timeline:nth-child(2n):after{border:15px solid green;border-left:none;border-radius:0 100px 100px 0;left:auto;right:12px}.main-timeline .timeline:nth-child(2n) .content{float:left}.main-timeline .timeline:nth-child(2n) .timeline-year{left:auto;right:10%}.main-timeline .timeline:nth-child(2n) .timeline-icon{left:auto;right:32%}.main-timeline .timeline:nth-child(5n+1):before{border-color:#46b2bc}.main-timeline .timeline:nth-child(5n+1):after{border-color:#65c7d0}.main-timeline .timeline:nth-child(5n+1) .timeline-icon,.main-timeline .timeline:nth-child(5n+1) .timeline-year,.main-timeline .timeline:nth-child(5n+1) .title{color:#65c7d0}.main-timeline .timeline:nth-child(5n+2):before{border-color:#ea3c14}.main-timeline .timeline:nth-child(5n+2):after{border-color:#ef5720}.main-timeline .timeline:nth-child(5n+2) .timeline-icon,.main-timeline .timeline:nth-child(5n+2) .timeline-year,.main-timeline .timeline:nth-child(5n+2) .title{color:#ea3c14}.main-timeline .timeline:nth-child(5n+3):before{border-color:#8cc63e}.main-timeline .timeline:nth-child(5n+3):after{border-color:#6caf29}.main-timeline .timeline:nth-child(5n+3) .timeline-icon,.main-timeline .timeline:nth-child(5n+3) .timeline-year,.main-timeline .timeline:nth-child(5n+3) .title{color:#8cc63e}.main-timeline .timeline:nth-child(5n+4):before{border-color:#f99324}.main-timeline .timeline:nth-child(5n+4):after{border-color:#fbb03b}.main-timeline .timeline:nth-child(5n+4) .timeline-icon,.main-timeline .timeline:nth-child(5n+4) .timeline-year,.main-timeline .timeline:nth-child(5n+4) .title{color:#f99324}.main-timeline .timeline:nth-child(5n+5):before{border-color:#0071bd}.main-timeline .timeline:nth-child(5n+5):after{border-color:#0050a3}.main-timeline .timeline:nth-child(5n+5) .timeline-icon,.main-timeline .timeline:nth-child(5n+5) .timeline-year,.main-timeline .timeline:nth-child(5n+5) .title{color:#0071bd}@media screen and (max-width:1200px){.main-timeline .timeline:after{border-radius:88px 0 0 88px}.main-timeline .timeline:nth-child(2n):after{border-radius:0 88px 88px 0}}@media screen and (max-width:767px){.main-timeline .timeline{margin-top:-19px}.main-timeline .timeline:before{border-radius:50px 0 0 50px;border-width:10px}.main-timeline .timeline:after{border-radius:43px 0 0 43px;border-width:10px;height:calc(100% - 18px);left:9px;top:9px;width:calc(50% - 9px)}.main-timeline .timeline:nth-child(2n):before{border-radius:0 50px 50px 0;border-width:10px}.main-timeline .timeline:nth-child(2n):after{border-radius:0 43px 43px 0;border-width:10px;height:calc(100% - 18px);right:9px;top:9px;width:calc(50% - 9px)}.main-timeline .timeline-icon{font-size:60px}.main-timeline .timeline-year{font-size:40px}}@media screen and (max-width:479px){.main-timeline .timeline-icon,.main-timeline .timeline-year{font-size:50px;left:10%;top:25%;-webkit-transform:translateY(0);transform:translateY(0)}.main-timeline .timeline-year{font-size:25px;left:9%;top:65%}.main-timeline .content{padding:10px;width:68%}.main-timeline .title{font-size:18px}.main-timeline .timeline:nth-child(2n) .timeline-icon{right:10%}.main-timeline .timeline:nth-child(2n) .timeline-year{right:9%}}@font-face{font-family:CustomFont;src:url(/static/media/Regular.ed60f45e14a72c230d25.otf)}.wrapper{margin:0 auto;max-width:1400px;overflow:hidden;width:100%}.block{padding:15px 30px 30px}.text-purple{-webkit-text-fill-color:transparent;-webkit-background-clip:text;background-image:linear-gradient(43deg,#4158d0,#c850c0 46%,#ffcc70)}.text-title{-webkit-text-fill-color:transparent;-webkit-background-clip:text;background-image:linear-gradient(43deg,#4158d0,#c850c0 46%,#ffcc70);font-size:40px;font-weight:900}@media only screen and (max-width:684px){.text-title{font-size:30px}}.btn{align-items:center;background-color:#232334;border:1.5px solid #2f2f45;border-radius:.5rem;color:#c8c7d8;cursor:pointer;display:flex;margin-right:.75rem;max-width:150px;padding:.5rem 1rem;transition:all .3s}.btn-register,.text-important{background:#8a2387;background:linear-gradient(90deg,#f27121,#e94057,#8a2387)}.text-important{-webkit-text-fill-color:transparent;-webkit-background-clip:text;font-weight:900}.btn-register{border-radius:8px;color:#fff;font-size:16px;margin:16px;max-width:250px;padding:8px 16px}.course_qc_wrapper{align-items:center;background:linear-gradient(139deg,#fb8817,#ff4b01,#c12127,#e02aff);display:flex;height:50px;justify-content:center;width:100%}.course_qc_wrapper span{text-transform:uppercase}.course_qc_wrapper span a{text-decoration:underline;text-transform:none}@media only screen and (max-width:650px){.course_qc_wrapper span{font-size:14px}}@media only screen and (max-width:500px){.course_qc_wrapper span{font-size:11px;text-transform:inherit}}.social{left:25px;position:fixed;top:35%;width:0;z-index:1000}.social ul{list-style-type:none;padding:0;-webkit-transform:translatex(-270px);transform:translatex(-270px)}.social ul li{background-color:rgba(0,0,0,.5);border-radius:0 30px 30px 0;display:block;margin:5px;padding:10px;text-align:right;transition:all 1s;width:300px}.social ul li:hover{-webkit-transform:translatex(110px);transform:translatex(110px)}.social ul li.facebook:hover{background-color:#3b5999}.social ul li.instagram:hover{background-color:#e4405f}.social ul li a{color:#fff;text-decoration:none}.social ul li i{background-color:#fff;border-radius:50%;color:#000;font-size:20px;height:40px;margin-left:14px;padding:10px;text-align:center;-webkit-transform:rotate(0);transform:rotate(0);width:40px}.social ul li:hover i{-webkit-transform:rotate(1turn);transform:rotate(1turn);transition:all 1s}</style><noscript><link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet"><link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet"><link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"><link href="/static/css/main.a33836f4.css" rel="stylesheet"></noscript><link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="preload" as="style" onload="this.rel='stylesheet'"><link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css" rel="preload" as="style" onload="this.rel='stylesheet'"><link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="preload" as="style" onload="this.rel='stylesheet'"><link href="/static/css/main.a33836f4.css" rel="preload" as="style" onload="this.rel='stylesheet'"></head><body><noscript>You need to enable JavaScript to run this app.</noscript><div id="root"><div class="app"><nav class="social"><ul><li class="instagram"><a href="https://www.tiktok.com/@devfe68" rel="noreferrer" target="_blank">Tiktok<i aria-hidden="true" class="fab fa-tiktok"></i></a></li><li class="facebook"><a href="https://www.facebook.com/laptrinhwebdevfe/" rel="noreferrer" target="_blank">Facebook<i aria-hidden="true" class="fa fa-facebook"></i></a></li><li class="instagram" rel="noreferrer" target="_blank"><a href="https://instagram.com/devfe68?">Instagram<i aria-hidden="true" class="fa fa-instagram"></i></a></li></ul></nav><div class="course_qc_wrapper"><span class="text-white">Khoá học Frontend chuyên sâu - từ cơ bản đến nâng cao 🚨 <a href="/course/react-chuyen-sau" aria-current="page">Tại đây</a></span></div><nav class="navbar"><a href="/" class="brand"><span class="text-purple">DevFe</span><span class="text-white">Edu</span></a><div class="navbar-icon"><label for="check"><input id="check" type="checkbox"><span></span><span></span><span></span></label></div><div class="navlist inactive"><a href="/course/react-chuyen-sau" class="navlink btn" aria-current="page"><span>Course</span></a><a href="/#video" class="navlink btn"><span>Videos</span></a><a href="/blog" class="navlink btn"><span>Blog</span></a></div></nav><div style="outline:0" tabindex="-1"><div class="wrapper"><header class="header-course"><div class="header-container"><h2 class="text-purple">KHÓA HỌC FRONTEND CHUYÊN SÂU</h2><p class="text-white text-center">Bạn là một sinh viên IT chưa có định hướng cho riêng mình ?<br>Bạn là một người trái nghành đang bơ vơ giữa muôn vàn lí tưởng ? Vậy bạn đã đến đúng chỗ, ở đây tôi sẽ đưa bạn trở thành một Developer tốt nhất từ những kiến thức cơ bản đến những kiến thức nâng cao khó nhằn !<br></p><h2 class="text-white">Vấn đề của bạn là<span class="text-purple"> ĐỊNH HƯỚNG và tôi có</span></h2><div class="price"><h1 class="text-white">Frontend Chuyên Sâu - từ cơ bản đến nâng cao🔥 - 48 buổi - 4 Tháng</h1><h2 class="text-price text-white">Khuyến mãi chỉ còn <span class="price-course text-important">1,500,000</span><sup>đ</sup>/tháng hoặc  <span class="price-course text-important">4,500,000</span><sup>đ</sup>/khóa</h2><a href="https://forms.gle/yiinh7cNabz1VLds9" class="btn btn-register" rel="noreferrer" target="_blank">Đăng kí tham gia khóa học</a></div><img alt="Khóa_học_Frontend/Reactjs" src="/static/media/react-course.0d839a5acbd31eddfd9b.jpg"></div><div class="header-background"></div></header><section class="benefit-course block"><h2 class="text-title">Bạn sẽ nhận được gì ?</h2><div class="benefit-text text-white"><h3 class="text-important"><img alt="quote" src="/static/media/quote.6224afbed64645b1a38f6ad5b9795bda.svg"> 1m<sup>2</sup> có 10 dev ReactJs<img alt="qoute" src="/static/media/quote.6224afbed64645b1a38f6ad5b9795bda.svg"></h3><p>Chắc hẳn, bạn đã nghe câu này rất nhiều rồi nhỉ, đúng vậy, hiện tại 10 người có 8 ông code Reactjs nhưng các công ty thì không bao giờ ngừng tuyển Reactjs Developer, bạn có bao giờ đặt ra câu hỏi đó cho chính bản thân mình hay chưa ??</p><p>Vâng đó chính là sự khác biệt mà tôi đem lại cho các bạn. Giúp bạn nổi trội giữa <span class="text-purple">RỪNG</span> developer</p><p>Khóa học Front end chuyên sâu này bắt đầu với việc học các kiến thức cơ bản nhất của <span class="text-purple">HTML5, </span><span class="text-purple">CSS3 </span>,<span class="text-purple"> Javascript </span>, kiến thức về<span class="text-purple"> SEO, Animation</span>, JS như HOF, Async Await,Destructuring, Rest Parameter để bạn tự tin hơn trước khi bắt tay vào code những dòng code ReactJs đầu tiên. Ngoài ra, những kiến thức về trình duyệt, Typescript, Authentication, Node.js, Git cũng được dạy để bạn luôn cảm thấy đây không chỉ là một khóa học Front end, nó là tất cả những gì mà 1 Middle ReactJs cần có. Frontend chuyên sâu vượt xa các kiến thức nền tảng, bạn sẽ master các tool lập trình, thực chiến một dự án lớn để có thể viết vào CV, giúp bạn tự tin phỏng vấn bất kỳ level front-end dev nào.</p><p>Những kiến thức bạn nhận được sau khóa học:</p><ul class="list-learn"><li><img alt="done_tick" src="/static/media/tick-done.ba0d6a2fe8a3cc61aac9d74d7cbbb8ad.svg"> Thành thạo các kiến thức cơ bản của HTML5, CSS3, Javascript</li><li><img alt="done_tick" src="/static/media/tick-done.ba0d6a2fe8a3cc61aac9d74d7cbbb8ad.svg"> Sử dụng mượt mà những kiến thức về SEO, về animation trong CSS</li><li><img alt="done_tick" src="/static/media/tick-done.ba0d6a2fe8a3cc61aac9d74d7cbbb8ad.svg"> Các kiến thức nâng cao trong Javascript như async, sync, promise, closure.....</li><li><img alt="done_tick" src="/static/media/tick-done.ba0d6a2fe8a3cc61aac9d74d7cbbb8ad.svg"> Sử dụng typescipt trong dự án thực tế</li><li><img alt="done_tick" src="/static/media/tick-done.ba0d6a2fe8a3cc61aac9d74d7cbbb8ad.svg"> Hiểu sâu về React và các thư viện liên quan như Redux, Redux Saga, tailwindCss, Ant Design...</li><li><img alt="done_tick" src="/static/media/tick-done.ba0d6a2fe8a3cc61aac9d74d7cbbb8ad.svg"> Hiểu và làm thành thạo các cơ chế Authentication, về token, refresh token, đăng nhập bằng Google</li><li><img alt="done_tick" src="/static/media/tick-done.ba0d6a2fe8a3cc61aac9d74d7cbbb8ad.svg"> Làm việc trực tiếp với API bằng cơ chế AJAX</li><li><img alt="done_tick" src="/static/media/tick-done.ba0d6a2fe8a3cc61aac9d74d7cbbb8ad.svg"> Phân tích được thiết kế, mô hình dự án</li><li><img alt="done_tick" src="/static/media/tick-done.ba0d6a2fe8a3cc61aac9d74d7cbbb8ad.svg"> Đọc tài liệu API và phân tích document</li><li><img alt="done_tick" src="/static/media/tick-done.ba0d6a2fe8a3cc61aac9d74d7cbbb8ad.svg"> Git cơ bản và nâng cao đủ có thể bạn làm 1 dự án thực tế</li><li><img alt="done_tick" src="/static/media/tick-done.ba0d6a2fe8a3cc61aac9d74d7cbbb8ad.svg"> Kĩ năng đọc tài liệu về 1 công nghệ mới, kĩ nâng debug nhanh chóng và hiệu quả</li><li><img alt="done_tick" src="/static/media/tick-done.ba0d6a2fe8a3cc61aac9d74d7cbbb8ad.svg"> Hướng dẫn viết CV tốt, hỗ trợ tìm việc làm và có phỏng vấn trước khi đi phỏng vấn thật ở công ty</li><li><img alt="done_tick" src="/static/media/tick-done.ba0d6a2fe8a3cc61aac9d74d7cbbb8ad.svg"> Và rất nhiều kiến thức trong quá trình học trực tiếp với mentor</li></ul></div><div class="data-benefit text-white"><div class="data-item"><h2>48+</h2><h6><p>Buổi học</p><p>trực tiếp/Online với Mentor</p></h6></div><div class="data-item"><h2>100+</h2><h6><p>Học Viên đã đăng kí</p><p>và có việc làm</p></h6></div></div></section><section class="content-course-block block"><h2 class="text-title">Nội dung khóa học Frontend Chuyên Sâu</h2><div class="container mt-5"><div class="row"><div class="col"><div class="main-timeline"><div class="timeline"><a href="#" class="timeline-content"><span class="timeline-year">1<sup>st</sup></span><div class="timeline-icon"><i aria-hidden="true" class="fa fa-rocket"></i></div><div class="content"><h3 class="title">HTML + CSS cơ bản và nâng cao</h3><p class="description">Bạn sẽ nắm rõ được tất cả các thẻ HTML, thuộc tính, bộ chọn CSS, Boostrap5, TailwinCss và có thể xây dựng được 1 website tĩnh (landing page) có hỗ trợ SEO, Animation và deploy lên server.</p></div></a></div><div class="timeline"><a href="#" class="timeline-content"><span class="timeline-year">2<sup>nd</sup></span><div class="timeline-icon"><i aria-hidden="true" class="fa fa-users"></i></div><div class="content"><h3 class="title">JavaScript</h3><p class="description">Bạn sẽ nắm rõ cách làm việc với biến, object, array, bất đồng bộ ở JS, Closure, Promise, Callback ..., chưa hết bạn sẽ được làm việc với API để hiểu rõ được cách kết nối với server và sử dụng Typescript.</p></div></a></div><div class="timeline"><a href="#" class="timeline-content"><span class="timeline-year">3<sup>rd</sup></span><div class="timeline-icon"><i aria-hidden="true" class="fa fa-cog"></i></div><div class="content"><h3 class="title">ReactJS</h3><p class="description">Nắm rõ ReactJs là gì, lifecircle, các hook cơ bản như useRef, useState, useEffect và nâng cao như useMemo, useCallback, useContext, useReducer... sau đó, Redux, Redux saga, Redux toolkit, các thư viện làm UI như Ant design, hỗ trợ validate như YUP, react-hook-form...</p></div></a></div><div class="timeline"><a href="#" class="timeline-content"><span class="timeline-year">3<sup>rd</sup></span><div class="timeline-icon"><i aria-hidden="true" class="fa fa-heart"></i></div><div class="content"><h3 class="title">Tool</h3><p class="description">Chương này chúng ta sẽ học cách làm việc với git bao gồm tất cả các lệnh cơ bản + nâng cao. Không những vậy ở đây ta sẽ tìm hiểu về cơ chế refresh token, authentication và Authortication</p></div></a></div><div class="timeline"><a href="#" class="timeline-content"><span class="timeline-year">4<sup>th</sup></span><div class="timeline-icon"><i aria-hidden="true" class="fa fa-globe"></i></div><div class="content"><h3 class="title">Dự án thực tế</h3><p class="description">Ở đây, bạn sẽ dùng những kiến thức đã học để tự hoàn thành dự án của bản thân có đầy đủ chức năng như 1 dự án thực tế, ví dụ như Login, thanh toán, List có sort, filter, phân trang, xem trước... Và deploy lên môi trường thực tế dưới sự hỗ trợ của Mentor</p></div></a></div><div class="timeline"><a href="#" class="timeline-content"><span class="timeline-year">4<sup>th</sup></span><div class="timeline-icon"><i aria-hidden="true" class="fa fa-apple"></i></div><div class="content"><h3 class="title">Hỗ trợ CV và phỏng vấn thử</h3><p class="description">Bạn sẽ được hỗ trợ làm CV 1 cách tốt nhất để hấp dẫn nhất đối với nhà tuyển dụng. Sau khi đã hoàn thành thì bạn sẽ được đội ngũ mentor phỏng vấn trước giống với thực tế và có đánh giá cụ thể để bạn có định hướng tốt</p></div></a></div></div></div></div></div></section><section class="method-block block"><h2 class="text-title">Phương pháp Giảng Dạy</h2><div class="method-content"><div class="method-text"><p class="text-white">Về cơ bản, các bạn sẽ được chia nhỏ từng nhóm từ 5 - 7 học viên, học trực tiếp với mentor qua meeting (có thể record nếu bạn muốn), nên bạn có thể tương tác trực tiếp với mentor 1 cách nhanh chóng nhất. Khóa học được thiết kế dựa theo kinh nghiệm của các bạn senior để giúp các học viên sẽ có đủ kiến thức trong thời gian ngắn nhất và không chỉ học lí thuyết mà khóa học đem đến từ <span class="text-purple">70% thực hành và chỉ 30% lý thuyết</span>, để có thể đưa đến cho học viên những bài toán thực tế ở các dự án giúp nhanh chóng làm quen với thực tại.</p><h3 class="text-white">Những ưu điểm của phương pháp dạy:</h3><ul class="Advantages text-white"><li><img alt="done_tick" src="/static/media/tick-done.ba0d6a2fe8a3cc61aac9d74d7cbbb8ad.svg"> Tương tác trực tiếp với Mentor, Video không quay sẵn</li><li><img alt="done_tick" src="/static/media/tick-done.ba0d6a2fe8a3cc61aac9d74d7cbbb8ad.svg">Học online, có thể học ở mọi nơi, không tốn thời gian đi lại</li><li><img alt="done_tick" src="/static/media/tick-done.ba0d6a2fe8a3cc61aac9d74d7cbbb8ad.svg">Được làm việc cùng những mentor giỏi nhất (senior Frontend)</li></ul></div><img alt="ưu_điểm_của_khóa_học_Frontend_chuyên_sâu" src="/static/media/Advantages.c409d5f66324c36ff343.jpg"></div></section><section class="block who-block"><h2 class="text-title">Ai nên đăng kí khóa học Frontend chuyên sâu</h2><p class="text-white">- <span class="text-purple">Các bạn sinh viên IT</span> đang theo học tại các trường ĐH, mong muốn có một nền tảng lập trình vững vàng để tạo lợi thế khi đi xin việc</p><p class="text-white">- <span class="text-purple">Các bạn sinh viên đang theo học các ngành khác ngoài IT </span>, mong muốn chuyển sang ngành IT để có được các cơ hội việc làm và phát triển nghề nghiệp tốt hơn</p><p class="text-white">- Các bạn đã đi làm ở các <span class="text-purple">ngành nghề khác ngoài IT mong muốn chuyển sang ngành IT</span> để có công việc tốt hơn</p><p class="text-white">- <span class="text-purple">Các bạn trẻ đang băn khoăn không biết lựa chọn ngành nghề nào cho mình</span>, đang mong muốn được tư vấn và hỗ trợ để có thể đưa ra lựa chọn đúng của mình, nhanh chóng nắm vững tay nghề và tìm kiếm việc làm.</p><p class="text-white">- Yêu cầu chung: Các bạn ham học hỏi, chăm chỉ, kiên trì và không ngại hỏi đáp cũng như đưa ra các thắc mắc trong quá trình học tập.</p></section><section class="target-course block"><h2 class="text-title text-white">Mục Tiêu của khóa học</h2><div class="target-list"><div class="card text-white"><div class="card-img-block"><img alt="Mục_tiêu_khóa_học_Reactjs" src="/static/media/target-icon.f4f75c7b9f2dc8ddb4ce90090cf6235b.svg" class="card-img"></div><div class="card-content"><h3 class="text-purple">Lập trình thành thạo</h3><h6 class="text-white">Sử dụng thành thạo các công nghệ thiết kế giao diện web: HTML5, CSS3, các CSS Framework & các thư viện JavaScript (React/Vue) mới nhất hiện nay.</h6></div></div><div class="card text-white"><div class="card-img-block"><img alt="Mục_tiêu_khóa_học_Reactjs" src="/static/media/target-icon.f4f75c7b9f2dc8ddb4ce90090cf6235b.svg" class="card-img"></div><div class="card-content"><h3 class="text-purple">Nền tảng vững chắc</h3><h6 class="text-white">Đạt được nền tảng kỹ thuật lập trình vững chắc và tư duy trong việc giải quyết vấn đề.</h6></div></div><div class="card text-white"><div class="card-img-block"><img alt="Mục_tiêu_khóa_học_Reactjs" src="/static/media/target-icon.f4f75c7b9f2dc8ddb4ce90090cf6235b.svg" class="card-img"></div><div class="card-content"><h3 class="text-purple">Ứng tuyển tại các công ty</h3><h6 class="text-white">Đủ khả năng ứng tuyển nghề: Lập trình Front-end tại các công ty.</h6></div></div><div class="card text-white"><div class="card-img-block"><img alt="Mục_tiêu_khóa_học_Reactjs" src="/static/media/target-icon.f4f75c7b9f2dc8ddb4ce90090cf6235b.svg" class="card-img"></div><div class="card-content"><h3 class="text-purple">Định hướng rõ ràng</h3><h6 class="text-white">Giúp các bạn định hướng được công việc lập trình Front-end trong thực tế cần phải làm những gì.</h6></div></div></div></section></div></div><div class="footer"><p>Copyright © 2023 DevFe - DevFE</p><div><a href="https://react.dev/" rel="noreferrer" target="_blank"><img alt="reactJs_framework_javascript" src="/static/media/react.10cc989e5112bbc80afa32af6456e859.svg"></a><a href="https://nextjs.org/" rel="noreferrer" target="_blank"><img alt="NextJs_framework_javascript" src="/static/media/nextjs.7d83bd409d884165f4fc2a9892d9d88d.svg"></a></div></div><canvas class="canvas-bg" height="850" width="480"></canvas></div></div><script type="text/javascript">/*! loadCSS. [c]2017 Filament Group, Inc. MIT License */
-!function(e){"use strict";var n=function(n,t,o){function i(e){if(a.body)return e();setTimeout(function(){i(e)})}function r(){l.addEventListener&&l.removeEventListener("load",r),l.media=o||"all"}var d,a=e.document,l=a.createElement("link");if(t)d=t;else{var f=(a.body||a.getElementsByTagName("head")[0]).childNodes;d=f[f.length-1]}var s=a.styleSheets;l.rel="stylesheet",l.href=n,l.media="only x",i(function(){d.parentNode.insertBefore(l,t?d:d.nextSibling)});var u=function(e){for(var n=l.href,t=s.length;t--;)if(s[t].href===n)return e();setTimeout(function(){u(e)})};return l.addEventListener&&l.addEventListener("load",r),l.onloadcssdefined=u,u(r),l};"undefined"!=typeof exports?exports.loadCSS=n:e.loadCSS=n}("undefined"!=typeof global?global:this);
-/*! loadCSS rel=preload polyfill. [c]2017 Filament Group, Inc. MIT License */
-!function(t){if(t.loadCSS){var e=loadCSS.relpreload={};if(e.support=function(){try{return t.document.createElement("link").relList.supports("preload")}catch(t){return!1}},e.poly=function(){for(var e=t.document.getElementsByTagName("link"),r=0;r<e.length;r++){var n=e[r];"preload"===n.rel&&"style"===n.getAttribute("as")&&(t.loadCSS(n.href,n,n.getAttribute("media")),n.rel=null)}},!e.support()){e.poly();var r=t.setInterval(e.poly,300);t.addEventListener&&t.addEventListener("load",function(){e.poly(),t.clearInterval(r)}),t.attachEvent&&t.attachEvent("onload",function(){t.clearInterval(r)})}}}(this);</script></body></html>
+ */
+      .fa,
+      .fab {
+        line-height: 1;
+      }
+      .fab {
+        -moz-osx-font-smoothing: grayscale;
+        -webkit-font-smoothing: antialiased;
+        display: inline-block;
+        font-style: normal;
+        font-variant: normal;
+        text-rendering: auto;
+        font-family: "Font Awesome 5 Brands";
+        font-weight: 400;
+      }
+      .fa-tiktok:before {
+        content: "\e07b";
+      }
+      @font-face {
+        font-family: "Font Awesome 5 Brands";
+        font-style: normal;
+        font-weight: 400;
+        font-display: block;
+        src: url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/webfonts/fa-brands-400.eot);
+        src: url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/webfonts/fa-brands-400.eot?#iefix)
+            format("embedded-opentype"),
+          url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/webfonts/fa-brands-400.woff2)
+            format("woff2"),
+          url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/webfonts/fa-brands-400.woff)
+            format("woff"),
+          url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/webfonts/fa-brands-400.ttf)
+            format("truetype"),
+          url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/webfonts/fa-brands-400.svg#fontawesome)
+            format("svg");
+      }
+      * {
+        box-sizing: border-box;
+      }
+      html {
+        line-height: 1.15;
+        -webkit-text-size-adjust: 100%;
+        -ms-text-size-adjust: 100%;
+        -ms-overflow-style: scrollbar;
+        -webkit-tap-highlight-color: transparent;
+      }
+      @-ms-viewport {
+        width: device-width;
+      }
+      body {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+          "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
+          "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+        font-size: 1rem;
+        color: #212529;
+        text-align: left;
+      }
+      [tabindex="-1"]:focus {
+        outline: 0 !important;
+      }
+      h1,
+      h2,
+      h3,
+      h6 {
+        margin-bottom: 0.5rem;
+        line-height: 1.2;
+        color: inherit;
+      }
+      p,
+      ul {
+        margin-bottom: 1rem;
+      }
+      sup {
+        position: relative;
+        font-size: 75%;
+        line-height: 0;
+        vertical-align: baseline;
+        top: -0.5em;
+      }
+      a {
+        color: #007bff;
+        background-color: transparent;
+        -webkit-text-decoration-skip: objects;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+      a:not([href]):not([tabindex]) {
+        color: inherit;
+        text-decoration: none;
+      }
+      a:not([href]):not([tabindex]):focus,
+      a:not([href]):not([tabindex]):hover {
+        color: inherit;
+        text-decoration: none;
+      }
+      a:not([href]):not([tabindex]):focus {
+        outline: 0;
+      }
+      label {
+        display: inline-block;
+        margin-bottom: 0.5rem;
+      }
+      input {
+        margin: 0;
+        font-family: inherit;
+        font-size: inherit;
+        line-height: inherit;
+        overflow: visible;
+      }
+      input[type="checkbox"] {
+        box-sizing: border-box;
+        padding: 0;
+      }
+      h1 {
+        font-size: 2.5rem;
+      }
+      h2 {
+        font-size: 2rem;
+      }
+      h3 {
+        font-size: 1.75rem;
+      }
+      h6 {
+        font-size: 1rem;
+      }
+      .container {
+        width: 100%;
+        padding-right: 15px;
+        padding-left: 15px;
+        margin-right: auto;
+        margin-left: auto;
+      }
+      @media (min-width: 576px) {
+        .container {
+          max-width: 540px;
+        }
+      }
+      @media (min-width: 768px) {
+        .container {
+          max-width: 720px;
+        }
+      }
+      @media (min-width: 992px) {
+        .container {
+          max-width: 960px;
+        }
+      }
+      @media (min-width: 1200px) {
+        .container {
+          max-width: 1140px;
+        }
+      }
+      .row {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        margin-right: -15px;
+        margin-left: -15px;
+      }
+      .col {
+        position: relative;
+        width: 100%;
+        min-height: 1px;
+        padding-right: 15px;
+        padding-left: 15px;
+        -ms-flex-preferred-size: 0;
+        flex-basis: 0;
+        -ms-flex-positive: 1;
+        flex-grow: 1;
+        max-width: 100%;
+      }
+      .btn {
+        display: inline-block;
+        font-weight: 400;
+        text-align: center;
+        white-space: nowrap;
+        vertical-align: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        font-size: 1rem;
+        line-height: 1.5;
+      }
+      @media screen and (prefers-reduced-motion: reduce) {
+        .btn {
+          transition: none;
+        }
+      }
+      .btn:focus,
+      .btn:hover {
+        text-decoration: none;
+      }
+      .btn:focus {
+        outline: 0;
+        box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+      }
+      .btn:disabled {
+        opacity: 0.65;
+      }
+      .btn:not(:disabled):not(.disabled) {
+        cursor: pointer;
+      }
+      .card,
+      .navbar {
+        position: relative;
+        display: -ms-flexbox;
+      }
+      .navbar {
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        -ms-flex-align: center;
+        align-items: center;
+        -ms-flex-pack: justify;
+        padding: 0.5rem 1rem;
+      }
+      .card {
+        display: flex;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        min-width: 0;
+        word-wrap: break-word;
+        background-color: #fff;
+        background-clip: border-box;
+        border: 1px solid rgba(0, 0, 0, 0.125);
+        border-radius: 0.25rem;
+      }
+      .card-img {
+        width: 100%;
+        border-radius: calc(0.25rem - 1px);
+      }
+      .mt-5 {
+        margin-top: 3rem !important;
+      }
+      .text-center {
+        text-align: center !important;
+      }
+      .text-white {
+        color: #fff !important;
+      }
+      @font-face {
+        font-family: FontAwesome;
+        src: url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/fonts/fontawesome-webfont.eot?v=4.7.0);
+        src: url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/fonts/fontawesome-webfont.eot?#iefix&v=4.7.0)
+            format("embedded-opentype"),
+          url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/fonts/fontawesome-webfont.woff2?v=4.7.0)
+            format("woff2"),
+          url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/fonts/fontawesome-webfont.woff?v=4.7.0)
+            format("woff"),
+          url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/fonts/fontawesome-webfont.ttf?v=4.7.0)
+            format("truetype"),
+          url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular)
+            format("svg");
+        font-weight: 400;
+        font-style: normal;
+      }
+      .fa {
+        display: inline-block;
+        font: 14px/1 FontAwesome;
+        font-size: inherit;
+        text-rendering: auto;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+      .fa-heart:before {
+        content: "\f004";
+      }
+      .fa-cog:before {
+        content: "\f013";
+      }
+      .fa-facebook:before {
+        content: "\f09a";
+      }
+      .fa-globe:before {
+        content: "\f0ac";
+      }
+      .fa-users:before {
+        content: "\f0c0";
+      }
+      .fa-rocket:before {
+        content: "\f135";
+      }
+      .fa-instagram:before {
+        content: "\f16d";
+      }
+      .fa-apple:before {
+        content: "\f179";
+      }
+      a,
+      body,
+      canvas,
+      div,
+      h1,
+      h2,
+      h3,
+      h6,
+      header,
+      html,
+      i,
+      img,
+      label,
+      li,
+      nav,
+      p,
+      section,
+      span,
+      ul {
+        border: 0;
+        font: inherit;
+        margin: 0;
+        padding: 0;
+        vertical-align: initial;
+      }
+      header,
+      nav,
+      section {
+        display: block;
+      }
+      body {
+        font-family: CustomFont, sans-serif;
+        line-height: 1.5;
+      }
+      ul {
+        list-style: none;
+      }
+      a {
+        position: relative;
+        z-index: 6;
+      }
+      #root,
+      body {
+        background-color: #181825;
+      }
+      .canvas-bg {
+        bottom: 0;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 2;
+      }
+      .footer,
+      a:hover {
+        color: #fff;
+      }
+      .footer {
+        border-top: 1.5px solid #2f2f45;
+        height: 100px;
+        padding: 10px;
+        text-align: center;
+      }
+      .footer div {
+        align-items: center;
+        display: flex;
+        justify-content: center;
+      }
+      .footer div img {
+        margin: 8px;
+        width: 40px;
+      }
+      .navbar {
+        background-color: rgba(24, 24, 37, 0.989);
+        display: flex;
+        -webkit-filter: blur(0.5);
+        filter: blur(0.5);
+        justify-content: space-between;
+        margin: 0 auto;
+        max-width: 1400px;
+        padding: 20px;
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0;
+        z-index: 10;
+      }
+      .navbar .brand {
+        font-size: 40px;
+      }
+      .navbar .brand:hover,
+      a {
+        text-decoration: none;
+      }
+      .navbar .navlist {
+        align-items: flex-start;
+        display: flex;
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+      }
+      .navbar .navlist .navlink span,
+      body {
+        font-size: 18px;
+      }
+      @media only screen and (max-width: 992px) {
+        .navbar .navlist {
+          background-color: #000;
+          bottom: 0;
+          flex-direction: column;
+          height: 100vh;
+          left: 0;
+          padding: 50px 0;
+          position: absolute;
+          top: 0;
+          -webkit-transform: translateX(0);
+          transform: translateX(0);
+          transition: transform 0.4s;
+          transition: transform 0.4s, -webkit-transform 0.4s;
+          width: 45%;
+          z-index: 11;
+        }
+        .navbar .navlist .navlink {
+          margin: 15px;
+          max-width: none;
+          text-align: center;
+          width: 80%;
+        }
+        .navbar .inactive {
+          -webkit-transform: translateX(-500px);
+          transform: translateX(-500px);
+        }
+      }
+      .navbar .navbar-icon,
+      .navbar .navbar-icon input[type="checkbox"] {
+        display: none;
+      }
+      @media only screen and (max-width: 992px) {
+        .navbar .navbar-icon {
+          display: block;
+        }
+      }
+      .navbar .navbar-icon label {
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        width: 45px;
+      }
+      .navbar .navbar-icon label span {
+        background: #fff;
+        border-radius: 10px;
+        height: 5px;
+        margin: 5px 0;
+        transition: 0.4s cubic-bezier(0.68, -0.6, 0.32, 1.6);
+      }
+      .navbar .navbar-icon span:first-of-type {
+        width: 50%;
+      }
+      .navbar .navbar-icon span:nth-of-type(2) {
+        width: 100%;
+      }
+      .navbar .navbar-icon span:nth-of-type(3) {
+        width: 75%;
+      }
+      .navbar .navbar-icon input[type="checkbox"]:checked ~ span:first-of-type {
+        -webkit-transform: rotate(45deg) translate(7px, 1px);
+        transform: rotate(45deg) translate(7px, 1px);
+        -webkit-transform-origin: bottom;
+        transform-origin: bottom;
+      }
+      .navbar
+        .navbar-icon
+        input[type="checkbox"]:checked
+        ~ span:nth-of-type(2) {
+        -webkit-transform: rotate(-45deg);
+        transform: rotate(-45deg);
+        -webkit-transform-origin: top;
+        transform-origin: top;
+      }
+      .navbar
+        .navbar-icon
+        input[type="checkbox"]:checked
+        ~ span:nth-of-type(3) {
+        -webkit-transform: translate(19px, -10px) rotate(45deg);
+        transform: translate(19px, -10px) rotate(45deg);
+        -webkit-transform-origin: bottom;
+        transform-origin: bottom;
+        width: 50%;
+      }
+      .header-course {
+        border-bottom: 1.5px solid #2f2f45;
+        height: auto;
+        padding: 30px 30px 40px;
+        position: relative;
+      }
+      .header-course .header-background {
+        background: url(https://global-uploads.webflow.com/6336e79cd8d43cd4d1230849/637fd5c110a8ac83b18b8738_stars.svg);
+        bottom: 0;
+        left: 0;
+        position: absolute;
+        right: 0;
+        top: 0;
+        z-index: -100;
+      }
+      .header-course .header-container,
+      .header-course .price {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+      .header-course .header-container h2 {
+        font-size: 50px;
+        font-weight: 900;
+        line-height: 1.25;
+        padding: 18px 50px;
+        text-align: center;
+      }
+      @media only screen and (max-width: 684px) {
+        .header-course .header-container h2 {
+          padding: 18px 15px;
+        }
+        .header-course .header-container h2.text-price {
+          font-size: 25px;
+        }
+      }
+      .header-course .header-container p,
+      .target-course .target-list .card .card-img-block img {
+        width: 50%;
+      }
+      .header-course .header-container img {
+        width: 65%;
+      }
+      .header-course .price {
+        margin: 18px 0;
+        text-align: center;
+      }
+      .benefit-course .data-benefit .data-item h6,
+      .header-course .price h1 {
+        font-size: 30px;
+      }
+      .benefit-course .benefit-text h3,
+      .header-course .price .text-price {
+        font-size: 25px;
+      }
+      .header-course .price .price-course {
+        font-size: 35px;
+      }
+      @media only screen and (max-width: 992px) {
+        .header-course .header-container p {
+          width: 100%;
+        }
+        .header-course .header-container .text-price {
+          font-size: 25px;
+        }
+      }
+      .target-course .target-list {
+        display: flex;
+        justify-content: space-between;
+      }
+      .target-course .target-list .card {
+        background-color: #232334;
+        border: 1.5px solid #2f2f45;
+        height: 330px;
+        margin: 10px;
+        padding: 0.75rem;
+        width: 300px;
+      }
+      .target-course .target-list .card .card-content {
+        margin: 8px;
+      }
+      .target-course .target-list .card .card-content h3,
+      .who-block p {
+        font-size: 20px;
+      }
+      .target-course .target-list .card .card-content h6 {
+        font-size: 16px;
+      }
+      .target-course .target-list .card .card-img-block {
+        display: flex;
+        justify-content: center;
+        overflow: hidden;
+        width: 100%;
+      }
+      .target-course .target-list .card:hover {
+        box-shadow: 3px 3px 25px #707080;
+        -webkit-transform: scale(1.02);
+        transform: scale(1.02);
+        transition: transform 0.5s;
+        transition: transform 0.5s, -webkit-transform 0.5s;
+      }
+      @media only screen and (max-width: 992px) {
+        .target-course .target-list {
+          flex-wrap: wrap;
+          justify-content: space-between;
+        }
+        .target-course .target-list .card {
+          width: 280px;
+        }
+      }
+      @media only screen and (max-width: 684px) {
+        .target-course .target-list {
+          justify-content: space-evenly;
+        }
+        .target-course .target-list .card {
+          width: 400px;
+        }
+      }
+      .benefit-course .benefit-text {
+        margin-left: 10px;
+      }
+      .benefit-course .benefit-text h3 img {
+        display: inline-block;
+        width: 30px;
+      }
+      .benefit-course .benefit-text .list-learn {
+        list-style: none;
+      }
+      .benefit-course .benefit-text .list-learn li,
+      .method-block .method-content .method-text .Advantages li {
+        align-items: center;
+        display: flex;
+        margin: 16px 0;
+      }
+      .benefit-course .benefit-text .list-learn img,
+      .method-block .method-content .method-text .Advantages img {
+        display: inline;
+        margin-right: 16px;
+        width: 30px;
+      }
+      .benefit-course .data-benefit {
+        display: flex;
+        margin: 50px;
+      }
+      .benefit-course .data-benefit .data-item {
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        width: 50%;
+      }
+      .benefit-course .data-benefit .data-item h2 {
+        color: #fff;
+        font-size: 70px;
+        font-weight: 900;
+        margin-right: 20px;
+      }
+      @media only screen and (max-width: 992px) {
+        .benefit-course .data-benefit {
+          align-items: center;
+          flex-direction: column;
+          margin: 50px 20px;
+        }
+        .benefit-course .data-benefit .data-item {
+          justify-content: normal;
+          width: 80%;
+        }
+        .benefit-course .data-benefit .data-item h2 {
+          font-size: 50px;
+          width: 150px;
+        }
+        .benefit-course .data-benefit .data-item h6 {
+          font-size: 20px;
+          width: calc(100% - 150px);
+        }
+      }
+      @media only screen and (max-width: 608px) {
+        .benefit-course .data-benefit .data-item {
+          width: 100%;
+        }
+        .benefit-course .data-benefit .data-item h2 {
+          width: 30%;
+        }
+        .benefit-course .data-benefit .data-item h6 {
+          width: 70%;
+        }
+      }
+      @media only screen and (max-width: 492px) {
+        .benefit-course .data-benefit .data-item {
+          width: 100%;
+        }
+        .benefit-course .data-benefit .data-item h2 {
+          font-size: 35px;
+          width: 30%;
+        }
+        .benefit-course .data-benefit .data-item h6 {
+          font-size: 16px;
+          width: 70%;
+        }
+      }
+      .method-block .method-content {
+        display: flex;
+        justify-content: space-between;
+        margin-left: 10px;
+        padding: 12px 0;
+      }
+      .method-block .method-content .method-text {
+        width: 60%;
+      }
+      .method-block .method-content .method-text h3 {
+        margin-top: 12px;
+      }
+      .method-block .method-content img {
+        width: 35%;
+      }
+      @media only screen and (max-width: 992px) {
+        .method-block .method-content {
+          align-items: center;
+          flex-direction: column;
+        }
+        .method-block .method-content .method-text {
+          width: 100%;
+        }
+        .method-block .method-content img {
+          width: 70%;
+        }
+      }
+      @media only screen and (max-width: 684px) {
+        .method-block .method-content img {
+          width: 90%;
+        }
+      }
+      .who-block p {
+        margin: 24px 6px;
+      }
+      .main-timeline {
+        font-family: tahoma;
+        padding: 20px 0;
+        position: relative;
+      }
+      .main-timeline:after,
+      .main-timeline:before {
+        background-color: #e7e7e7;
+        border: 10px solid #303334;
+        border-radius: 50%;
+        content: "";
+        height: 40px;
+        left: 50%;
+        position: absolute;
+        -webkit-transform: translatex(-50%);
+        transform: translatex(-50%);
+        width: 40px;
+        z-index: 2;
+      }
+      .main-timeline:before {
+        top: -15px;
+      }
+      .main-timeline:after {
+        bottom: 15px;
+        top: auto;
+      }
+      .main-timeline .timeline {
+        margin-top: -30px;
+        padding: 35px 0;
+        position: relative;
+        z-index: 1;
+      }
+      .main-timeline .timeline:after,
+      .main-timeline .timeline:before {
+        border: 15px solid #46b2bc;
+        border-radius: 110px 0 0 110px;
+        border-right: none;
+        content: "";
+        height: 100%;
+        position: absolute;
+        width: 50%;
+        z-index: -1;
+      }
+      .main-timeline .timeline:before {
+        left: 0;
+        top: 0;
+      }
+      .main-timeline .timeline:after {
+        border-color: #65c7d0;
+        height: calc(100% - 30px);
+        left: 12px;
+        top: 15px;
+        width: calc(50% - 12px);
+      }
+      .main-timeline .timeline-content {
+        display: inline-block;
+      }
+      .main-timeline .timeline-content:hover {
+        text-decoration: none;
+      }
+      .main-timeline .timeline-year {
+        font-size: 50px;
+        font-weight: 600;
+        left: 10%;
+        -webkit-transform: translatey(-50%);
+        transform: translatey(-50%);
+      }
+      .main-timeline .timeline-icon,
+      .main-timeline .timeline-year {
+        color: #65c7d0;
+        display: inline-block;
+        position: absolute;
+        top: 50%;
+      }
+      .main-timeline .timeline-icon {
+        font-size: 70px;
+        left: 34%;
+        -webkit-transform: translateY(-50%);
+        transform: translateY(-50%);
+      }
+      .main-timeline .content {
+        color: #909090;
+        display: inline-block;
+        float: right;
+        padding: 12px;
+        width: 50%;
+      }
+      .main-timeline .title {
+        color: #65c7d0;
+        font-size: 20px;
+        font-weight: 600;
+        margin: 0 0 5px;
+        text-transform: uppercase;
+      }
+      .main-timeline .description {
+        font-size: 15px;
+        margin: 0;
+      }
+      .main-timeline .timeline:nth-child(2n):before {
+        border: 15px solid red;
+        border-left: none;
+        border-radius: 0 110px 110px 0;
+        left: auto;
+        right: 0;
+      }
+      .main-timeline .timeline:nth-child(2n):after {
+        border: 15px solid green;
+        border-left: none;
+        border-radius: 0 100px 100px 0;
+        left: auto;
+        right: 12px;
+      }
+      .main-timeline .timeline:nth-child(2n) .content {
+        float: left;
+      }
+      .main-timeline .timeline:nth-child(2n) .timeline-year {
+        left: auto;
+        right: 10%;
+      }
+      .main-timeline .timeline:nth-child(2n) .timeline-icon {
+        left: auto;
+        right: 32%;
+      }
+      .main-timeline .timeline:nth-child(5n + 1):before {
+        border-color: #46b2bc;
+      }
+      .main-timeline .timeline:nth-child(5n + 1):after {
+        border-color: #65c7d0;
+      }
+      .main-timeline .timeline:nth-child(5n + 1) .timeline-icon,
+      .main-timeline .timeline:nth-child(5n + 1) .timeline-year,
+      .main-timeline .timeline:nth-child(5n + 1) .title {
+        color: #65c7d0;
+      }
+      .main-timeline .timeline:nth-child(5n + 2):before {
+        border-color: #ea3c14;
+      }
+      .main-timeline .timeline:nth-child(5n + 2):after {
+        border-color: #ef5720;
+      }
+      .main-timeline .timeline:nth-child(5n + 2) .timeline-icon,
+      .main-timeline .timeline:nth-child(5n + 2) .timeline-year,
+      .main-timeline .timeline:nth-child(5n + 2) .title {
+        color: #ea3c14;
+      }
+      .main-timeline .timeline:nth-child(5n + 3):before {
+        border-color: #8cc63e;
+      }
+      .main-timeline .timeline:nth-child(5n + 3):after {
+        border-color: #6caf29;
+      }
+      .main-timeline .timeline:nth-child(5n + 3) .timeline-icon,
+      .main-timeline .timeline:nth-child(5n + 3) .timeline-year,
+      .main-timeline .timeline:nth-child(5n + 3) .title {
+        color: #8cc63e;
+      }
+      .main-timeline .timeline:nth-child(5n + 4):before {
+        border-color: #f99324;
+      }
+      .main-timeline .timeline:nth-child(5n + 4):after {
+        border-color: #fbb03b;
+      }
+      .main-timeline .timeline:nth-child(5n + 4) .timeline-icon,
+      .main-timeline .timeline:nth-child(5n + 4) .timeline-year,
+      .main-timeline .timeline:nth-child(5n + 4) .title {
+        color: #f99324;
+      }
+      .main-timeline .timeline:nth-child(5n + 5):before {
+        border-color: #0071bd;
+      }
+      .main-timeline .timeline:nth-child(5n + 5):after {
+        border-color: #0050a3;
+      }
+      .main-timeline .timeline:nth-child(5n + 5) .timeline-icon,
+      .main-timeline .timeline:nth-child(5n + 5) .timeline-year,
+      .main-timeline .timeline:nth-child(5n + 5) .title {
+        color: #0071bd;
+      }
+      @media screen and (max-width: 1200px) {
+        .main-timeline .timeline:after {
+          border-radius: 88px 0 0 88px;
+        }
+        .main-timeline .timeline:nth-child(2n):after {
+          border-radius: 0 88px 88px 0;
+        }
+      }
+      @media screen and (max-width: 767px) {
+        .main-timeline .timeline {
+          margin-top: -19px;
+        }
+        .main-timeline .timeline:before {
+          border-radius: 50px 0 0 50px;
+          border-width: 10px;
+        }
+        .main-timeline .timeline:after {
+          border-radius: 43px 0 0 43px;
+          border-width: 10px;
+          height: calc(100% - 18px);
+          left: 9px;
+          top: 9px;
+          width: calc(50% - 9px);
+        }
+        .main-timeline .timeline:nth-child(2n):before {
+          border-radius: 0 50px 50px 0;
+          border-width: 10px;
+        }
+        .main-timeline .timeline:nth-child(2n):after {
+          border-radius: 0 43px 43px 0;
+          border-width: 10px;
+          height: calc(100% - 18px);
+          right: 9px;
+          top: 9px;
+          width: calc(50% - 9px);
+        }
+        .main-timeline .timeline-icon {
+          font-size: 60px;
+        }
+        .main-timeline .timeline-year {
+          font-size: 40px;
+        }
+      }
+      @media screen and (max-width: 479px) {
+        .main-timeline .timeline-icon,
+        .main-timeline .timeline-year {
+          font-size: 50px;
+          left: 10%;
+          top: 25%;
+          -webkit-transform: translateY(0);
+          transform: translateY(0);
+        }
+        .main-timeline .timeline-year {
+          font-size: 25px;
+          left: 9%;
+          top: 65%;
+        }
+        .main-timeline .content {
+          padding: 10px;
+          width: 68%;
+        }
+        .main-timeline .title {
+          font-size: 18px;
+        }
+        .main-timeline .timeline:nth-child(2n) .timeline-icon {
+          right: 10%;
+        }
+        .main-timeline .timeline:nth-child(2n) .timeline-year {
+          right: 9%;
+        }
+      }
+      @font-face {
+        font-family: CustomFont;
+        src: url(/static/media/Regular.ed60f45e14a72c230d25.otf);
+      }
+      .wrapper {
+        margin: 0 auto;
+        max-width: 1400px;
+        overflow: hidden;
+        width: 100%;
+      }
+      .block {
+        padding: 15px 30px 30px;
+      }
+      .text-purple {
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+        background-image: linear-gradient(43deg, #4158d0, #c850c0 46%, #ffcc70);
+      }
+      .text-title {
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+        background-image: linear-gradient(43deg, #4158d0, #c850c0 46%, #ffcc70);
+        font-size: 40px;
+        font-weight: 900;
+      }
+      @media only screen and (max-width: 684px) {
+        .text-title {
+          font-size: 30px;
+        }
+      }
+      .btn {
+        align-items: center;
+        background-color: #232334;
+        border: 1.5px solid #2f2f45;
+        border-radius: 0.5rem;
+        color: #c8c7d8;
+        cursor: pointer;
+        display: flex;
+        margin-right: 0.75rem;
+        max-width: 150px;
+        padding: 0.5rem 1rem;
+        transition: all 0.3s;
+      }
+      .btn-register,
+      .text-important {
+        background: #8a2387;
+        background: linear-gradient(90deg, #f27121, #e94057, #8a2387);
+      }
+      .text-important {
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+        font-weight: 900;
+      }
+      .btn-register {
+        border-radius: 8px;
+        color: #fff;
+        font-size: 16px;
+        margin: 16px;
+        max-width: 250px;
+        padding: 8px 16px;
+      }
+      .course_qc_wrapper {
+        align-items: center;
+        background: linear-gradient(139deg, #fb8817, #ff4b01, #c12127, #e02aff);
+        display: flex;
+        height: 50px;
+        justify-content: center;
+        width: 100%;
+      }
+      .course_qc_wrapper span {
+        text-transform: uppercase;
+      }
+      .course_qc_wrapper span a {
+        text-decoration: underline;
+        text-transform: none;
+      }
+      @media only screen and (max-width: 650px) {
+        .course_qc_wrapper span {
+          font-size: 14px;
+        }
+      }
+      @media only screen and (max-width: 500px) {
+        .course_qc_wrapper span {
+          font-size: 11px;
+          text-transform: inherit;
+        }
+      }
+      .social {
+        left: 25px;
+        position: fixed;
+        top: 35%;
+        width: 0;
+        z-index: 1000;
+      }
+      .social ul {
+        list-style-type: none;
+        padding: 0;
+        -webkit-transform: translatex(-270px);
+        transform: translatex(-270px);
+      }
+      .social ul li {
+        background-color: rgba(0, 0, 0, 0.5);
+        border-radius: 0 30px 30px 0;
+        display: block;
+        margin: 5px;
+        padding: 10px;
+        text-align: right;
+        transition: all 1s;
+        width: 300px;
+      }
+      .social ul li:hover {
+        -webkit-transform: translatex(110px);
+        transform: translatex(110px);
+      }
+      .social ul li.facebook:hover {
+        background-color: #3b5999;
+      }
+      .social ul li.instagram:hover {
+        background-color: #e4405f;
+      }
+      .social ul li a {
+        color: #fff;
+        text-decoration: none;
+      }
+      .social ul li i {
+        background-color: #fff;
+        border-radius: 50%;
+        color: #000;
+        font-size: 20px;
+        height: 40px;
+        margin-left: 14px;
+        padding: 10px;
+        text-align: center;
+        -webkit-transform: rotate(0);
+        transform: rotate(0);
+        width: 40px;
+      }
+      .social ul li:hover i {
+        -webkit-transform: rotate(1turn);
+        transform: rotate(1turn);
+        transition: all 1s;
+      }
+    </style>
+    <noscript
+      ><link
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        rel="stylesheet" /><link
+        href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css"
+        rel="stylesheet" /><link
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        rel="stylesheet" /><link
+        href="/static/css/main.1c5dc42b.css"
+        rel="stylesheet"
+    /></noscript>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      rel="preload"
+      as="style"
+      onload="this.rel='stylesheet'"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css"
+      rel="preload"
+      as="style"
+      onload="this.rel='stylesheet'"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="preload"
+      as="style"
+      onload="this.rel='stylesheet'"
+    />
+    <link
+      href="/static/css/main.1c5dc42b.css"
+      rel="preload"
+      as="style"
+      onload="this.rel='stylesheet'"
+    />
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root">
+      <div class="app">
+        <nav class="social">
+          <ul>
+            <li class="instagram">
+              <a
+                href="https://www.tiktok.com/@devfe68"
+                rel="noreferrer"
+                target="_blank"
+                >Tiktok<i aria-hidden="true" class="fab fa-tiktok"></i
+              ></a>
+            </li>
+            <li class="facebook">
+              <a
+                href="https://www.facebook.com/laptrinhwebdevfe/"
+                rel="noreferrer"
+                target="_blank"
+                >Facebook<i aria-hidden="true" class="fa fa-facebook"></i
+              ></a>
+            </li>
+            <li class="instagram" rel="noreferrer" target="_blank">
+              <a href="https://instagram.com/devfe68?"
+                >Instagram<i aria-hidden="true" class="fa fa-instagram"></i
+              ></a>
+            </li>
+          </ul>
+        </nav>
+        <div class="course_qc_wrapper">
+          <span class="text-white"
+            >Khoá học Frontend chuyên sâu - từ cơ bản đến nâng cao 🚨
+            <a href="/course/react-chuyen-sau" aria-current="page"
+              >Tại đây</a
+            ></span
+          >
+        </div>
+        <nav class="navbar">
+          <a href="/" class="brand"
+            ><span class="text-purple">DevFe</span
+            ><span class="text-white">Edu</span></a
+          >
+          <div class="navbar-icon">
+            <label for="check"
+              ><input id="check" type="checkbox" /><span></span><span></span
+              ><span></span
+            ></label>
+          </div>
+          <div class="navlist inactive">
+            <a
+              href="/course/react-chuyen-sau"
+              class="navlink btn"
+              aria-current="page"
+              ><span>Course</span></a
+            ><a href="/#video" class="navlink btn"><span>Videos</span></a
+            ><a href="/blog" class="navlink btn"><span>Blog</span></a>
+          </div>
+        </nav>
+        <div style="outline: 0" tabindex="-1">
+          <div class="wrapper">
+            <header class="header-course">
+              <div class="header-container">
+                <h2 class="text-purple">KHÓA HỌC FRONTEND CHUYÊN SÂU</h2>
+                <p class="text-white text-center">
+                  Bạn là một sinh viên IT chưa có định hướng cho riêng mình ?<br />Bạn
+                  là một người trái nghành đang bơ vơ giữa muôn vàn lí tưởng ?
+                  Vậy bạn đã đến đúng chỗ, ở đây tôi sẽ đưa bạn trở thành một
+                  Developer tốt nhất từ những kiến thức cơ bản đến những kiến
+                  thức nâng cao khó nhằn !<br />
+                </p>
+                <h2 class="text-white">
+                  Vấn đề của bạn là<span class="text-purple">
+                    ĐỊNH HƯỚNG và tôi có</span
+                  >
+                </h2>
+                <div class="price">
+                  <h1 class="text-white">
+                    Frontend Chuyên Sâu - từ cơ bản đến nâng cao🔥 - 48 buổi - 4
+                    Tháng
+                  </h1>
+                  <h2 class="text-price text-white">
+                    Khuyến mãi chỉ còn <span class="price-course text-important"
+                      >1,500,000</span
+                    ><sup>đ</sup>/tháng hoặc  <span
+                      class="price-course text-important"
+                      >4,500,000</span
+                    ><sup>đ</sup>/khóa
+                  </h2>
+                  <h2 class="text-price text-purple">
+                    Bắt đầu từ 05/06/2023 vào tối thứ 3, 5, 7
+                  </h2>
+                  <a
+                    href="https://forms.gle/yiinh7cNabz1VLds9"
+                    class="btn btn-register"
+                    rel="noreferrer"
+                    target="_blank"
+                    >Đăng kí tham gia khóa học</a
+                  >
+                </div>
+                <img
+                  alt="Khóa_học_Frontend/Reactjs"
+                  src="/static/media/react-course.0d839a5acbd31eddfd9b.jpg"
+                />
+              </div>
+              <div class="header-background"></div>
+            </header>
+            <section class="benefit-course block">
+              <h2 class="text-title">Bạn sẽ nhận được gì ?</h2>
+              <div class="benefit-text text-white">
+                <h3 class="text-important">
+                  <img
+                    alt="quote"
+                    src="/static/media/quote.6224afbed64645b1a38f6ad5b9795bda.svg"
+                  />
+                  1m<sup>2</sup> có 10 dev ReactJs<img
+                    alt="qoute"
+                    src="/static/media/quote.6224afbed64645b1a38f6ad5b9795bda.svg"
+                  />
+                </h3>
+                <p>
+                  Chắc hẳn, bạn đã nghe câu này rất nhiều rồi nhỉ, đúng vậy,
+                  hiện tại 10 người có 8 ông code Reactjs nhưng các công ty thì
+                  không bao giờ ngừng tuyển Reactjs Developer, bạn có bao giờ
+                  đặt ra câu hỏi đó cho chính bản thân mình hay chưa ??
+                </p>
+                <p>
+                  Vâng đó chính là sự khác biệt mà tôi đem lại cho các bạn. Giúp
+                  bạn nổi trội giữa
+                  <span class="text-purple">RỪNG</span> developer
+                </p>
+                <p>
+                  Khóa học Front end chuyên sâu này bắt đầu với việc học các
+                  kiến thức cơ bản nhất của
+                  <span class="text-purple">HTML5, </span
+                  ><span class="text-purple">CSS3 </span>,<span
+                    class="text-purple"
+                  >
+                    Javascript </span
+                  >, kiến thức về<span class="text-purple"> SEO, Animation</span
+                  >, JS như HOF, Async Await,Destructuring, Rest Parameter để
+                  bạn tự tin hơn trước khi bắt tay vào code những dòng code
+                  ReactJs đầu tiên. Ngoài ra, những kiến thức về trình duyệt,
+                  Typescript, Authentication, Node.js, Git cũng được dạy để bạn
+                  luôn cảm thấy đây không chỉ là một khóa học Front end, nó là
+                  tất cả những gì mà 1 Middle ReactJs cần có. Frontend chuyên
+                  sâu vượt xa các kiến thức nền tảng, bạn sẽ master các tool lập
+                  trình, thực chiến một dự án lớn để có thể viết vào CV, giúp
+                  bạn tự tin phỏng vấn bất kỳ level front-end dev nào.
+                </p>
+                <p>Những kiến thức bạn nhận được sau khóa học:</p>
+                <ul class="list-learn">
+                  <li>
+                    <img
+                      alt="done_tick"
+                      src="/static/media/tick-done.ba0d6a2fe8a3cc61aac9d74d7cbbb8ad.svg"
+                    />
+                    Thành thạo các kiến thức cơ bản của HTML5, CSS3, Javascript
+                  </li>
+                  <li>
+                    <img
+                      alt="done_tick"
+                      src="/static/media/tick-done.ba0d6a2fe8a3cc61aac9d74d7cbbb8ad.svg"
+                    />
+                    Sử dụng mượt mà những kiến thức về SEO, về animation trong
+                    CSS
+                  </li>
+                  <li>
+                    <img
+                      alt="done_tick"
+                      src="/static/media/tick-done.ba0d6a2fe8a3cc61aac9d74d7cbbb8ad.svg"
+                    />
+                    Các kiến thức nâng cao trong Javascript như async, sync,
+                    promise, closure.....
+                  </li>
+                  <li>
+                    <img
+                      alt="done_tick"
+                      src="/static/media/tick-done.ba0d6a2fe8a3cc61aac9d74d7cbbb8ad.svg"
+                    />
+                    Sử dụng typescipt trong dự án thực tế
+                  </li>
+                  <li>
+                    <img
+                      alt="done_tick"
+                      src="/static/media/tick-done.ba0d6a2fe8a3cc61aac9d74d7cbbb8ad.svg"
+                    />
+                    Hiểu sâu về React và các thư viện liên quan như Redux, Redux
+                    Saga, tailwindCss, Ant Design...
+                  </li>
+                  <li>
+                    <img
+                      alt="done_tick"
+                      src="/static/media/tick-done.ba0d6a2fe8a3cc61aac9d74d7cbbb8ad.svg"
+                    />
+                    Hiểu và làm thành thạo các cơ chế Authentication, về token,
+                    refresh token, đăng nhập bằng Google
+                  </li>
+                  <li>
+                    <img
+                      alt="done_tick"
+                      src="/static/media/tick-done.ba0d6a2fe8a3cc61aac9d74d7cbbb8ad.svg"
+                    />
+                    Làm việc trực tiếp với API bằng cơ chế AJAX
+                  </li>
+                  <li>
+                    <img
+                      alt="done_tick"
+                      src="/static/media/tick-done.ba0d6a2fe8a3cc61aac9d74d7cbbb8ad.svg"
+                    />
+                    Phân tích được thiết kế, mô hình dự án
+                  </li>
+                  <li>
+                    <img
+                      alt="done_tick"
+                      src="/static/media/tick-done.ba0d6a2fe8a3cc61aac9d74d7cbbb8ad.svg"
+                    />
+                    Đọc tài liệu API và phân tích document
+                  </li>
+                  <li>
+                    <img
+                      alt="done_tick"
+                      src="/static/media/tick-done.ba0d6a2fe8a3cc61aac9d74d7cbbb8ad.svg"
+                    />
+                    Git cơ bản và nâng cao đủ có thể bạn làm 1 dự án thực tế
+                  </li>
+                  <li>
+                    <img
+                      alt="done_tick"
+                      src="/static/media/tick-done.ba0d6a2fe8a3cc61aac9d74d7cbbb8ad.svg"
+                    />
+                    Kĩ năng đọc tài liệu về 1 công nghệ mới, kĩ nâng debug nhanh
+                    chóng và hiệu quả
+                  </li>
+                  <li>
+                    <img
+                      alt="done_tick"
+                      src="/static/media/tick-done.ba0d6a2fe8a3cc61aac9d74d7cbbb8ad.svg"
+                    />
+                    Hướng dẫn viết CV tốt, hỗ trợ tìm việc làm và có phỏng vấn
+                    trước khi đi phỏng vấn thật ở công ty
+                  </li>
+                  <li>
+                    <img
+                      alt="done_tick"
+                      src="/static/media/tick-done.ba0d6a2fe8a3cc61aac9d74d7cbbb8ad.svg"
+                    />
+                    Và rất nhiều kiến thức trong quá trình học trực tiếp với
+                    mentor
+                  </li>
+                </ul>
+              </div>
+              <div class="data-benefit text-white">
+                <div class="data-item">
+                  <h2>48+</h2>
+                  <h6>
+                    <p>Buổi học</p>
+                    <p>trực tiếp/Online với Mentor</p>
+                  </h6>
+                </div>
+                <div class="data-item">
+                  <h2>100+</h2>
+                  <h6>
+                    <p>Học Viên đã đăng kí</p>
+                    <p>và có việc làm</p>
+                  </h6>
+                </div>
+              </div>
+            </section>
+            <section class="content-course-block block">
+              <h2 class="text-title">Nội dung khóa học Frontend Chuyên Sâu</h2>
+              <div class="container mt-5">
+                <div class="row">
+                  <div class="col">
+                    <div class="main-timeline">
+                      <div class="timeline">
+                        <a href="#" class="timeline-content"
+                          ><span class="timeline-year">1<sup>st</sup></span>
+                          <div class="timeline-icon">
+                            <i aria-hidden="true" class="fa fa-rocket"></i>
+                          </div>
+                          <div class="content">
+                            <h3 class="title">HTML + CSS cơ bản và nâng cao</h3>
+                            <p class="description">
+                              Bạn sẽ nắm rõ được tất cả các thẻ HTML, thuộc
+                              tính, bộ chọn CSS, Boostrap5, TailwinCss và có thể
+                              xây dựng được 1 website tĩnh (landing page) có hỗ
+                              trợ SEO, Animation và deploy lên server.
+                            </p>
+                          </div></a
+                        >
+                      </div>
+                      <div class="timeline">
+                        <a href="#" class="timeline-content"
+                          ><span class="timeline-year">2<sup>nd</sup></span>
+                          <div class="timeline-icon">
+                            <i aria-hidden="true" class="fa fa-users"></i>
+                          </div>
+                          <div class="content">
+                            <h3 class="title">JavaScript</h3>
+                            <p class="description">
+                              Bạn sẽ nắm rõ cách làm việc với biến, object,
+                              array, bất đồng bộ ở JS, Closure, Promise,
+                              Callback ..., chưa hết bạn sẽ được làm việc với
+                              API để hiểu rõ được cách kết nối với server và sử
+                              dụng Typescript.
+                            </p>
+                          </div></a
+                        >
+                      </div>
+                      <div class="timeline">
+                        <a href="#" class="timeline-content"
+                          ><span class="timeline-year">3<sup>rd</sup></span>
+                          <div class="timeline-icon">
+                            <i aria-hidden="true" class="fa fa-cog"></i>
+                          </div>
+                          <div class="content">
+                            <h3 class="title">ReactJS</h3>
+                            <p class="description">
+                              Nắm rõ ReactJs là gì, lifecircle, các hook cơ bản
+                              như useRef, useState, useEffect và nâng cao như
+                              useMemo, useCallback, useContext, useReducer...
+                              sau đó, Redux, Redux saga, Redux toolkit, các thư
+                              viện làm UI như Ant design, hỗ trợ validate như
+                              YUP, react-hook-form...
+                            </p>
+                          </div></a
+                        >
+                      </div>
+                      <div class="timeline">
+                        <a href="#" class="timeline-content"
+                          ><span class="timeline-year">3<sup>rd</sup></span>
+                          <div class="timeline-icon">
+                            <i aria-hidden="true" class="fa fa-heart"></i>
+                          </div>
+                          <div class="content">
+                            <h3 class="title">Tool</h3>
+                            <p class="description">
+                              Chương này chúng ta sẽ học cách làm việc với git
+                              bao gồm tất cả các lệnh cơ bản + nâng cao. Không
+                              những vậy ở đây ta sẽ tìm hiểu về cơ chế refresh
+                              token, authentication và Authortication
+                            </p>
+                          </div></a
+                        >
+                      </div>
+                      <div class="timeline">
+                        <a href="#" class="timeline-content"
+                          ><span class="timeline-year">4<sup>th</sup></span>
+                          <div class="timeline-icon">
+                            <i aria-hidden="true" class="fa fa-globe"></i>
+                          </div>
+                          <div class="content">
+                            <h3 class="title">Dự án thực tế</h3>
+                            <p class="description">
+                              Ở đây, bạn sẽ dùng những kiến thức đã học để tự
+                              hoàn thành dự án của bản thân có đầy đủ chức năng
+                              như 1 dự án thực tế, ví dụ như Login, thanh toán,
+                              List có sort, filter, phân trang, xem trước... Và
+                              deploy lên môi trường thực tế dưới sự hỗ trợ của
+                              Mentor
+                            </p>
+                          </div></a
+                        >
+                      </div>
+                      <div class="timeline">
+                        <a href="#" class="timeline-content"
+                          ><span class="timeline-year">4<sup>th</sup></span>
+                          <div class="timeline-icon">
+                            <i aria-hidden="true" class="fa fa-apple"></i>
+                          </div>
+                          <div class="content">
+                            <h3 class="title">Hỗ trợ CV và phỏng vấn thử</h3>
+                            <p class="description">
+                              Bạn sẽ được hỗ trợ làm CV 1 cách tốt nhất để hấp
+                              dẫn nhất đối với nhà tuyển dụng. Sau khi đã hoàn
+                              thành thì bạn sẽ được đội ngũ mentor phỏng vấn
+                              trước giống với thực tế và có đánh giá cụ thể để
+                              bạn có định hướng tốt
+                            </p>
+                          </div></a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section class="method-block block">
+              <h2 class="text-title">Phương pháp Giảng Dạy</h2>
+              <div class="method-content">
+                <div class="method-text">
+                  <p class="text-white">
+                    Về cơ bản, các bạn sẽ được chia nhỏ từng nhóm từ 5 - 7 học
+                    viên, học trực tiếp với mentor qua meeting (có thể record
+                    nếu bạn muốn), nên bạn có thể tương tác trực tiếp với mentor
+                    1 cách nhanh chóng nhất. Khóa học được thiết kế dựa theo
+                    kinh nghiệm của các bạn senior để giúp các học viên sẽ có đủ
+                    kiến thức trong thời gian ngắn nhất và không chỉ học lí
+                    thuyết mà khóa học đem đến từ
+                    <span class="text-purple"
+                      >70% thực hành và chỉ 30% lý thuyết</span
+                    >, để có thể đưa đến cho học viên những bài toán thực tế ở
+                    các dự án giúp nhanh chóng làm quen với thực tại.
+                  </p>
+                  <h3 class="text-white">Những ưu điểm của phương pháp dạy:</h3>
+                  <ul class="Advantages text-white">
+                    <li>
+                      <img
+                        alt="done_tick"
+                        src="/static/media/tick-done.ba0d6a2fe8a3cc61aac9d74d7cbbb8ad.svg"
+                      />
+                      Tương tác trực tiếp với Mentor, Video không quay sẵn
+                    </li>
+                    <li>
+                      <img
+                        alt="done_tick"
+                        src="/static/media/tick-done.ba0d6a2fe8a3cc61aac9d74d7cbbb8ad.svg"
+                      />Học online, có thể học ở mọi nơi, không tốn thời gian đi
+                      lại
+                    </li>
+                    <li>
+                      <img
+                        alt="done_tick"
+                        src="/static/media/tick-done.ba0d6a2fe8a3cc61aac9d74d7cbbb8ad.svg"
+                      />Được làm việc cùng những mentor giỏi nhất (senior
+                      Frontend)
+                    </li>
+                  </ul>
+                </div>
+                <img
+                  alt="ưu_điểm_của_khóa_học_Frontend_chuyên_sâu"
+                  src="/static/media/Advantages.c409d5f66324c36ff343.jpg"
+                />
+              </div>
+            </section>
+            <section class="block who-block">
+              <h2 class="text-title">
+                Ai nên đăng kí khóa học Frontend chuyên sâu
+              </h2>
+              <p class="text-white">
+                - <span class="text-purple">Các bạn sinh viên IT</span> đang
+                theo học tại các trường ĐH, mong muốn có một nền tảng lập trình
+                vững vàng để tạo lợi thế khi đi xin việc
+              </p>
+              <p class="text-white">
+                -
+                <span class="text-purple"
+                  >Các bạn sinh viên đang theo học các ngành khác ngoài IT </span
+                >, mong muốn chuyển sang ngành IT để có được các cơ hội việc làm
+                và phát triển nghề nghiệp tốt hơn
+              </p>
+              <p class="text-white">
+                - Các bạn đã đi làm ở các
+                <span class="text-purple"
+                  >ngành nghề khác ngoài IT mong muốn chuyển sang ngành IT</span
+                >
+                để có công việc tốt hơn
+              </p>
+              <p class="text-white">
+                -
+                <span class="text-purple"
+                  >Các bạn trẻ đang băn khoăn không biết lựa chọn ngành nghề nào
+                  cho mình</span
+                >, đang mong muốn được tư vấn và hỗ trợ để có thể đưa ra lựa
+                chọn đúng của mình, nhanh chóng nắm vững tay nghề và tìm kiếm
+                việc làm.
+              </p>
+              <p class="text-white">
+                - Yêu cầu chung: Các bạn ham học hỏi, chăm chỉ, kiên trì và
+                không ngại hỏi đáp cũng như đưa ra các thắc mắc trong quá trình
+                học tập.
+              </p>
+            </section>
+            <section class="target-course block">
+              <h2 class="text-title text-white">Mục Tiêu của khóa học</h2>
+              <div class="target-list">
+                <div class="card text-white">
+                  <div class="card-img-block">
+                    <img
+                      alt="Mục_tiêu_khóa_học_Reactjs"
+                      src="/static/media/target-icon.f4f75c7b9f2dc8ddb4ce90090cf6235b.svg"
+                      class="card-img"
+                    />
+                  </div>
+                  <div class="card-content">
+                    <h3 class="text-purple">Lập trình thành thạo</h3>
+                    <h6 class="text-white">
+                      Sử dụng thành thạo các công nghệ thiết kế giao diện web:
+                      HTML5, CSS3, các CSS Framework & các thư viện JavaScript
+                      (React/Vue) mới nhất hiện nay.
+                    </h6>
+                  </div>
+                </div>
+                <div class="card text-white">
+                  <div class="card-img-block">
+                    <img
+                      alt="Mục_tiêu_khóa_học_Reactjs"
+                      src="/static/media/target-icon.f4f75c7b9f2dc8ddb4ce90090cf6235b.svg"
+                      class="card-img"
+                    />
+                  </div>
+                  <div class="card-content">
+                    <h3 class="text-purple">Nền tảng vững chắc</h3>
+                    <h6 class="text-white">
+                      Đạt được nền tảng kỹ thuật lập trình vững chắc và tư duy
+                      trong việc giải quyết vấn đề.
+                    </h6>
+                  </div>
+                </div>
+                <div class="card text-white">
+                  <div class="card-img-block">
+                    <img
+                      alt="Mục_tiêu_khóa_học_Reactjs"
+                      src="/static/media/target-icon.f4f75c7b9f2dc8ddb4ce90090cf6235b.svg"
+                      class="card-img"
+                    />
+                  </div>
+                  <div class="card-content">
+                    <h3 class="text-purple">Ứng tuyển tại các công ty</h3>
+                    <h6 class="text-white">
+                      Đủ khả năng ứng tuyển nghề: Lập trình Front-end tại các
+                      công ty.
+                    </h6>
+                  </div>
+                </div>
+                <div class="card text-white">
+                  <div class="card-img-block">
+                    <img
+                      alt="Mục_tiêu_khóa_học_Reactjs"
+                      src="/static/media/target-icon.f4f75c7b9f2dc8ddb4ce90090cf6235b.svg"
+                      class="card-img"
+                    />
+                  </div>
+                  <div class="card-content">
+                    <h3 class="text-purple">Định hướng rõ ràng</h3>
+                    <h6 class="text-white">
+                      Giúp các bạn định hướng được công việc lập trình Front-end
+                      trong thực tế cần phải làm những gì.
+                    </h6>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+        <div class="footer">
+          <p>Copyright © 2023 DevFe - DevFE</p>
+          <div>
+            <a href="https://react.dev/" rel="noreferrer" target="_blank"
+              ><img
+                alt="reactJs_framework_javascript"
+                src="/static/media/react.10cc989e5112bbc80afa32af6456e859.svg" /></a
+            ><a href="https://nextjs.org/" rel="noreferrer" target="_blank"
+              ><img
+                alt="NextJs_framework_javascript"
+                src="/static/media/nextjs.7d83bd409d884165f4fc2a9892d9d88d.svg"
+            /></a>
+          </div>
+        </div>
+        <canvas class="canvas-bg" height="850" width="480"></canvas>
+      </div>
+    </div>
+    <script type="text/javascript">
+      /*! loadCSS. [c]2017 Filament Group, Inc. MIT License */
+      !(function (e) {
+        "use strict";
+        var n = function (n, t, o) {
+          function i(e) {
+            if (a.body) return e();
+            setTimeout(function () {
+              i(e);
+            });
+          }
+          function r() {
+            l.addEventListener && l.removeEventListener("load", r),
+              (l.media = o || "all");
+          }
+          var d,
+            a = e.document,
+            l = a.createElement("link");
+          if (t) d = t;
+          else {
+            var f = (a.body || a.getElementsByTagName("head")[0]).childNodes;
+            d = f[f.length - 1];
+          }
+          var s = a.styleSheets;
+          (l.rel = "stylesheet"),
+            (l.href = n),
+            (l.media = "only x"),
+            i(function () {
+              d.parentNode.insertBefore(l, t ? d : d.nextSibling);
+            });
+          var u = function (e) {
+            for (var n = l.href, t = s.length; t--; )
+              if (s[t].href === n) return e();
+            setTimeout(function () {
+              u(e);
+            });
+          };
+          return (
+            l.addEventListener && l.addEventListener("load", r),
+            (l.onloadcssdefined = u),
+            u(r),
+            l
+          );
+        };
+        "undefined" != typeof exports ? (exports.loadCSS = n) : (e.loadCSS = n);
+      })("undefined" != typeof global ? global : this);
+      /*! loadCSS rel=preload polyfill. [c]2017 Filament Group, Inc. MIT License */
+      !(function (t) {
+        if (t.loadCSS) {
+          var e = (loadCSS.relpreload = {});
+          if (
+            ((e.support = function () {
+              try {
+                return t.document
+                  .createElement("link")
+                  .relList.supports("preload");
+              } catch (t) {
+                return !1;
+              }
+            }),
+            (e.poly = function () {
+              for (
+                var e = t.document.getElementsByTagName("link"), r = 0;
+                r < e.length;
+                r++
+              ) {
+                var n = e[r];
+                "preload" === n.rel &&
+                  "style" === n.getAttribute("as") &&
+                  (t.loadCSS(n.href, n, n.getAttribute("media")),
+                  (n.rel = null));
+              }
+            }),
+            !e.support())
+          ) {
+            e.poly();
+            var r = t.setInterval(e.poly, 300);
+            t.addEventListener &&
+              t.addEventListener("load", function () {
+                e.poly(), t.clearInterval(r);
+              }),
+              t.attachEvent &&
+                t.attachEvent("onload", function () {
+                  t.clearInterval(r);
+                });
+          }
+        }
+      })(this);
+    </script>
+    <script src="../../static/js/main.c5a51816.js"></script>
+  </body>
+</html>

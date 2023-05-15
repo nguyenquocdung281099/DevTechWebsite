@@ -52,6 +52,9 @@ export default function CourseDetail({}) {
               <span className="price-course text-important">4,500,000</span>
               <sup>đ</sup>/khóa
             </h2>
+            <h2 className="text-price text-purple">
+              Bắt đầu từ 05/06/2023 vào tối thứ 3, 5, 7
+            </h2>
             <a
               className="btn btn-register"
               href="https://forms.gle/yiinh7cNabz1VLds9"
