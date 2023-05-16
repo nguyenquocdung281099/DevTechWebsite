@@ -8,11 +8,12 @@ import { dataLearn, targetList } from "../../constants";
 import TimeLine from "./components/Timeline";
 import { Helmet } from "react-helmet";
 import { useEffect } from "react";
-import { useState } from "react";
-import Loading from "../../Components/Loading";
-export default function CourseDetail({}) {
+import { createBackground } from "../../Common/functionCommon";
+
+export default function CourseDetail() {
   useEffect(() => {
     window.scrollTo(0, 0);
+    createBackground();
   }, []);
 
   return (

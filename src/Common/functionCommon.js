@@ -1,11 +1,20 @@
-export function createBackground() {
-
-  var canvas, ctx, circ, nodes, mouse, SENSITIVITY, SIBLINGS_LIMIT, DENSITY, NODES_QTY, ANCHOR_LENGTH, MOUSE_RADIUS;
+export function createBackground(isMouse) {
+  var canvas,
+    ctx,
+    circ,
+    nodes,
+    mouse,
+    SENSITIVITY,
+    SIBLINGS_LIMIT,
+    DENSITY,
+    NODES_QTY,
+    ANCHOR_LENGTH,
+    MOUSE_RADIUS;
 
   // how close next node must be to activate connection (in px)
   // shorter distance == better connection (line width)
-  SENSITIVITY = 100;
-  // note that siblings limit is not 'accurate' as the node can actually have more connections than this value that's because the node accepts sibling nodes with no regard to their current connections this is acceptable because potential fix would not result in significant visual difference 
+  SENSITIVITY = isMouse ? 20 : 100;
+  // note that siblings limit is not 'accurate' as the node can actually have more connections than this value that's because the node accepts sibling nodes with no regard to their current connections this is acceptable because potential fix would not result in significant visual difference
   // more siblings == bigger node
   SIBLINGS_LIMIT = 10;
   // default node margin
@@ -17,16 +26,16 @@ export function createBackground() {
   // highlight radius
   MOUSE_RADIUS = 150;
 
-  circ =  Math.PI;
+  circ = Math.PI;
   nodes = [];
 
-  canvas = document.querySelector('canvas');
+  canvas = document.querySelector("canvas");
   resizeWindow();
   mouse = {
     x: canvas.width / 2,
-    y: canvas.height / 2
+    y: canvas.height / 2,
   };
-  ctx = canvas.getContext('2d');
+  ctx = canvas.getContext("2d");
   if (!ctx) {
     console("Ooops! Your browser does not support canvas :'(");
   }
@@ -44,15 +53,21 @@ export function createBackground() {
     this.brightness = 0;
   }
 
-  Node.prototype.drawNode = function() {
+  Node.prototype.drawNode = function () {
     var color = "rgba(255, 95, 158, " + this.brightness + ")";
     ctx.beginPath();
-    ctx.arc(this.x, this.y, 2 * this.radius + 2 * this.siblings.length / SIBLINGS_LIMIT, 0, circ);
+    ctx.arc(
+      this.x,
+      this.y,
+      2 * this.radius + (2 * this.siblings.length) / SIBLINGS_LIMIT,
+      0,
+      circ
+    );
     ctx.fillStyle = color;
     ctx.fill();
   };
 
-  Node.prototype.drawConnections = function() {
+  Node.prototype.drawConnections = function () {
     for (var i = 0; i < this.siblings.length; i++) {
       var color = "rgba(255, 95, 158, " + this.brightness + ")";
       ctx.beginPath();
@@ -64,7 +79,7 @@ export function createBackground() {
     }
   };
 
-  Node.prototype.moveNode = function() {
+  Node.prototype.moveNode = function () {
     this.energy -= 2;
     if (this.energy < 1) {
       this.energy = Math.random() * 100;
@@ -83,8 +98,8 @@ export function createBackground() {
         this.vy = Math.random() * 4 - 2;
       }
     }
-    this.x += this.vx * this.energy / 100;
-    this.y += this.vy * this.energy / 100;
+    this.x += (this.vx * this.energy) / 100;
+    this.y += (this.vy * this.energy) / 100;
   };
 
   function initNodes() {
@@ -99,7 +114,9 @@ export function createBackground() {
   }
 
   function calcDistance(node1, node2) {
-    return Math.sqrt(Math.pow(node1.x - node2.x, 2) + (Math.pow(node1.y - node2.y, 2)));
+    return Math.sqrt(
+      Math.pow(node1.x - node2.x, 2) + Math.pow(node1.y - node2.y, 2)
+    );
   }
 
   function findSiblings() {
@@ -143,10 +160,13 @@ export function createBackground() {
     var i, node, distance;
     for (i = 0; i < NODES_QTY; i++) {
       node = nodes[i];
-      distance = calcDistance({
-        x: mouse.x,
-        y: mouse.y
-      }, node);
+      distance = calcDistance(
+        {
+          x: mouse.x,
+          y: mouse.y,
+        },
+        node
+      );
       if (distance < MOUSE_RADIUS) {
         node.brightness = 1 - distance / MOUSE_RADIUS;
       } else {
@@ -165,8 +185,8 @@ export function createBackground() {
   }
 
   function initHandlers() {
-    document.addEventListener('resize', resizeWindow, false);
-    canvas.addEventListener('mousemove', mousemoveHandler, false);
+    document.addEventListener("resize", resizeWindow, false);
+    canvas.addEventListener("mousemove", mousemoveHandler, false);
   }
 
   function resizeWindow() {
@@ -182,5 +202,4 @@ export function createBackground() {
   initHandlers();
   initNodes();
   redrawScene();
-
 }

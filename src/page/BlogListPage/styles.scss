@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap');
+
+.blogs-page {
+  padding: 30px;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 300;
+  position: relative;
+  @media only screen and (max-width: 684px) {
+    padding: 8px;
+  }
+  header {
+    margin-top: 70px;
+    @media only screen and (max-width: 684px) {
+      margin-top: 40px;
+    }
+    h1 {
+      font-size: 40px;
+      font-weight: 500;
+      @media only screen and (max-width: 684px) {
+        font-size: 30px;
+      }
+    }
+
+    .action-search {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      margin-top: 50px;
+      position: relative;
+      button {
+        @media only screen and (max-width: 480px) {
+          width: 100%;
+          max-width: 100%;
+          margin-top: 6px;
+        }
+        i {
+          margin-right: 3px;
+        }
+      }
+
+
+    }
+    .header-background {
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      z-index: -100;
+      background: url(https://global-uploads.webflow.com/6336e79cd8d43cd4d1230849/637fd5c110a8ac83b18b8738_stars.svg);
+    }
+    .container {
+      position: relative;
+      z-index: 5;
+      width: 50%;
+      flex: 0 auto;
+      align-items: center;
+      display: flex;
+      margin-left: 0;
+      padding: 0;
+      margin-right: 10px;
+
+      @media only screen and (max-width: 650px) {
+        width: 80%;
+      }
+
+      @media only screen and (max-width: 480px) {
+        width: 100%;
+      }
+      input {
+        width: 100%;
+        min-height: 100%;
+        color: #181825;
+        background-color: #fafafd;
+        border-style: none;
+        border-radius: 0.5rem;
+        padding: 8px;
+        padding-left: 3rem;
+
+        &:focus-visible {
+          outline: none;
+        }
+      }
+
+      i {
+        width: 1.5rem;
+        height: 1.5rem;
+        color: #181825;
+        position: absolute;
+        top: auto;
+        bottom: auto;
+        left: 20px;
+        right: auto;
+      }
+    }
+  }
+
+  main.card-list {
+    margin-top: 30px;
+    display: flex;
+    overflow-x: scroll;
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none;
+    scroll-snap-type: x mandatory;
+
+    .card {
+      cursor: pointer;
+      margin: 20px;
+      width: 100%;
+      height: 400px;
+      max-width: 22rem;
+      background-color: #232334;
+      border: 1.5px solid #2f2f45;
+      padding: 0.75rem;
+      .card-content {
+        margin: 8px;
+        h3 {
+          font-size: 20px;
+        }
+
+        .tags {
+          padding: 6px 0;
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: flex-start;
+          
+        }
+
+        @media only screen and (max-width: 684px) {
+          h3 {
+            font-size: 18px;
+          }
+        }
+      }
+      .card-action {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 18px;
+        a {
+          // width: 1;
+          i {
+            margin-right: 10px;
+          }
+        }
+
+        div {
+          font-size: 13px;
+        }
+
+        span {
+          font-size: 15px;
+        }
+      }
+
+      .card-img-block {
+        width: 100%;
+        height: 250px;
+        overflow: hidden;
+        overflow: hidden;
+        position: relative;
+        img {
+          width: 100%;
+          height: 250px;
+        }
+
+        .date {
+          position: absolute;
+          top: 5px;
+          left: 5px;
+          min-height: 4rem;
+          min-width: 4rem;
+          -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+          color: #fafafd;
+          background-color: rgba(35,35,52,.2);
+          border: 1.5px solid #2f2f45;
+          border-radius: 0.5rem;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          display: flex;
+          position: absolute;
+
+          .month {
+            color: #6966ff;
+            font-size: 1rem;
+            font-weight: 700;
+          }
+        }
+      }
+    }
+  }
+
+  .pagi {
+    text-align: end;
+    color: #fafafd;
+    font-size: 15px;
+    span {
+      color: #6966ff;
+    }
+  }
+}npm
+
+.tag {
+  color: #fafafd;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  background-color: #6966ff;
+  border-radius: 0.25rem;
+  margin-bottom: 0.25rem;
+  margin-right: 0.5rem;
+  padding: 0.25rem 0.75rem;
+  font-size: .75rem;
+  font-weight: 500;
+}

@@ -1,0 +1,113 @@
+.blog-detail-wrapper {
+  position: relative;
+  .article-content {
+    max-width: 672px;
+    height: 100vh;
+    background-color: white;
+    margin: 0 auto;
+  }
+  .header-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -100;
+    background: url(https://global-uploads.webflow.com/6336e79cd8d43cd4d1230849/637fd5c110a8ac83b18b8738_stars.svg);
+  }
+  .qc-course-blog {
+    position: fixed;
+    top: 150px;
+    right: 15px;
+    .card {
+      cursor: pointer;
+      margin: 20px;
+      width: 100%;
+      height: 500px;
+      max-width: 22rem;
+      background-color: #232334;
+      border: 1.5px solid #2f2f45;
+      padding: 0.75rem;
+      .card-content {
+        margin: 8px;
+        h3 {
+          font-size: 20px;
+        }
+        p {
+          font-size: 15px;
+        }
+
+        .tags {
+          padding: 6px 0;
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: flex-start;
+          
+        }
+
+        @media only screen and (max-width: 684px) {
+          h3 {
+            font-size: 18px;
+          }
+        }
+      }
+      .card-action {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 18px;
+        a {
+          max-width: 200px;
+          i {
+            margin-right: 10px;
+          }
+        }
+
+        div {
+          font-size: 13px;
+        }
+
+        span {
+          font-size: 15px;
+        }
+      }
+
+      .card-img-block {
+        width: 100%;
+        height: 250px;
+        overflow: hidden;
+        overflow: hidden;
+        position: relative;
+        img {
+          width: 100%;
+          height: 250px;
+        }
+
+        .date {
+          position: absolute;
+          top: 5px;
+          left: 5px;
+          min-height: 4rem;
+          min-width: 4rem;
+          -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+          color: #fafafd;
+          background-color: rgba(35,35,52,.2);
+          border: 1.5px solid #2f2f45;
+          border-radius: 0.5rem;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          display: flex;
+          position: absolute;
+
+          .month {
+            color: #6966ff;
+            font-size: 1rem;
+            font-weight: 700;
+          }
+        }
+      }
+    }
+  }
+} 
