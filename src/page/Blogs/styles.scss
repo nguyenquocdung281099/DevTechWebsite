@@ -1,10 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;1,300;1,400&display=swap");
 .blog-detail-wrapper {
+  line-height: 1.78;
   position: relative;
   .article-content {
-    max-width: 672px;
-    height: 100vh;
-    background-color: white;
+    font-family: "Nunito", sans-serif;
+    max-width: 780px;
+    min-height: 100vh;
     margin: 0 auto;
+    color: white;
+    header {
+      text-align: center;
+      h1 {
+        font-size: 35px;
+      }
+
+      span {
+        margin-top: 8px;
+        color: #fafafd;
+        font-size: 14px;
+
+        .tag-course {
+          margin-left: 6px;
+        }
+      }
+
+      .information-author {
+        margin: 8px;
+        margin-bottom: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .avatar {
+          width: 40px;
+          height: 40px;
+          border-radius: 50%;
+          border: 1px solid #fafafd;
+          overflow: hidden;
+          img {
+            width: 40px;
+            height: 40px;
+          }
+          margin-right: 8px;
+        }
+
+        h3 {
+          font-size: 16px;
+          color: #fafafd;
+        }
+      }
+
+      .key-hightlight {
+        text-align: start;
+        background-color: #1a1a2c;
+        border: 1.5px solid #2f2f45;
+        border-radius: 1rem;
+        margin-bottom: 4rem;
+        padding: 2rem;
+        position: relative;
+        overflow: hidden;
+
+        ul {
+          list-style-type: disc;
+          padding: 20px;
+          font-weight: 300;
+          position: relative;
+          z-index: 2;
+        }
+
+        .bg-key {
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+
+          img {
+            position: absolute;
+            max-width: 150px;
+            top: auto;
+            bottom: 0%;
+            left: auto;
+            right: 0%;
+          }
+        }
+      }
+    }
   }
   .header-background {
     position: absolute;
@@ -19,6 +99,16 @@
     position: fixed;
     top: 150px;
     right: 15px;
+
+    @media only screen and (max-width: 1600px) {
+      position: unset;
+      width: 100%;
+      margin: 0 auto;
+      display: flex;
+      justify-content: center;
+      text-align: start;
+    }
+
     .card {
       cursor: pointer;
       margin: 20px;
@@ -42,7 +132,6 @@
           display: flex;
           flex-wrap: wrap;
           justify-content: flex-start;
-          
         }
 
         @media only screen and (max-width: 684px) {
@@ -92,7 +181,7 @@
           -webkit-backdrop-filter: blur(5px);
           backdrop-filter: blur(5px);
           color: #fafafd;
-          background-color: rgba(35,35,52,.2);
+          background-color: rgba(35, 35, 52, 0.2);
           border: 1.5px solid #2f2f45;
           border-radius: 0.5rem;
           flex-direction: column;
@@ -108,6 +197,177 @@
           }
         }
       }
+
+      @media only screen and (max-width: 1600px) {
+        max-width: unset;
+        width: 100%;
+        height: auto;
+        .card-img-block {
+          display: none;
+        }
+      }
     }
   }
-} 
+  main {
+    .content-blog {
+      padding-left: 20px;
+    }
+
+    
+    ul {
+      list-style-type: disc;
+      padding: 20px;
+      margin-left: 15px;
+      font-weight: 300;
+      position: relative;
+      z-index: 2;
+    }
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .footer-blog {
+    border-top: 1px solid rgba(110, 75, 75, 0.293);
+    margin: 30px 0;
+    padding: 30px;
+  }
+
+  
+  @media only screen and (max-width: 780px) {
+    padding: 12px;
+  }
+
+  @media only screen and (max-width: 400px) {
+    li, p {
+      font-size: 14px;
+    }
+  }
+}
+
+.title-blog {
+  font-size: 25px;
+}
+/**
+ * Dracula Theme originally by Zeno Rocha [@zenorocha]
+ * https://draculatheme.com/
+ *
+ * Ported for PrismJS by Albert Vallverdu [@byverdu]
+ */
+
+ code[class*="language-"],
+ pre[class*="language-"] {
+   color: #f8f8f2;
+   background: none;
+   text-shadow: 0 1px rgba(0, 0, 0, 0.3);
+   font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+   text-align: left;
+   white-space: pre;
+   word-spacing: normal;
+   word-break: normal;
+   word-wrap: normal;
+   line-height: 1.5;
+   -moz-tab-size: 4;
+   -o-tab-size: 4;
+   tab-size: 4;
+   -webkit-hyphens: none;
+   -moz-hyphens: none;
+   -ms-hyphens: none;
+   hyphens: none;
+ }
+ 
+ /* Code blocks */
+ pre[class*="language-"] {
+   padding: 1em;
+   margin: .5em 0;
+   overflow: auto;
+   border-radius: 0.3em;
+ }
+ 
+ :not(pre) > code[class*="language-"],
+ pre[class*="language-"] {
+   background: #282a36;
+ }
+ 
+ /* Inline code */
+ :not(pre) > code[class*="language-"] {
+   padding: .1em;
+   border-radius: .3em;
+   white-space: normal;
+ }
+ 
+ .token.comment,
+ .token.prolog,
+ .token.doctype,
+ .token.cdata {
+   color: #6272a4;
+ }
+ 
+ .token.punctuation {
+   color: #f8f8f2;
+ }
+ 
+ .namespace {
+   opacity: .7;
+ }
+ 
+ .token.property,
+ .token.tag,
+ .token.constant,
+ .token.symbol,
+ .token.deleted {
+   color: #ff79c6;
+ }
+ 
+ .token.boolean,
+ .token.number {
+   color: #bd93f9;
+ }
+ 
+ .token.selector,
+ .token.attr-name,
+ .token.string,
+ .token.char,
+ .token.builtin,
+ .token.inserted {
+   color: #50fa7b;
+ }
+ 
+ .token.operator,
+ .token.entity,
+ .token.url,
+ .language-css .token.string,
+ .style .token.string,
+ .token.variable {
+   color: #f8f8f2;
+ }
+ 
+ .token.atrule,
+ .token.attr-value,
+ .token.function,
+ .token.class-name {
+   color: #f1fa8c;
+ }
+ 
+ .token.keyword {
+   color: #8be9fd;
+ }
+ 
+ .token.regex,
+ .token.important {
+   color: #ffb86c;
+ }
+ 
+ .token.important,
+ .token.bold {
+   font-weight: bold;
+ }
+ 
+ .token.italic {
+   font-style: italic;
+ }
+ 
+ .token.entity {
+   cursor: help;
+ }

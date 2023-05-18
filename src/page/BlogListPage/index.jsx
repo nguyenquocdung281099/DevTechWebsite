@@ -58,8 +58,8 @@ export default function Blogs() {
           </div>
           <div class="card-content">
             <div className="tags">
-              <div className="tag">FRONTEND</div>
-              <div className="tag">BACKEND</div>
+              <div className="tag-course">FRONTEND</div>
+              <div className="tag-course">BACKEND</div>
             </div>
             <h3 className="text-purple">Google Authentication with React</h3>
           </div>
