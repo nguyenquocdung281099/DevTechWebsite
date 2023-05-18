@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.1c5dc42b.css",
-    "main.js": "/static/js/main.c5a51816.js",
+    "main.css": "/static/css/main.a5a6f513.css",
+    "main.js": "/static/js/main.93e91297.js",
     "static/media/user.jpg": "/static/media/user.be9c4be27ff3bd95626d.jpg",
     "static/media/bannerTiktok.png": "/static/media/bannerTiktok.e985ddc9663f46c9c6b5.png",
     "static/media/Advantages.jpg": "/static/media/Advantages.c409d5f66324c36ff343.jpg",
@@ -9,18 +9,18 @@
     "static/media/header-image.png": "/static/media/header-image.0c318c0ce8bb469d4e38.png",
     "static/media/my-tiktok.jpg": "/static/media/my-tiktok.676827e4df618b6ad635.jpg",
     "static/media/Regular.otf": "/static/media/Regular.ed60f45e14a72c230d25.otf",
-    "static/media/card.png": "/static/media/card.84d74e95f5ad6150d2ec.png",
+    "static/media/logo-color.png": "/static/media/logo-color.5906e7a0d4e97ce953db.png",
     "index.html": "/index.html",
     "static/media/target-icon.svg": "/static/media/target-icon.f4f75c7b9f2dc8ddb4ce90090cf6235b.svg",
     "static/media/nextjs.svg": "/static/media/nextjs.7d83bd409d884165f4fc2a9892d9d88d.svg",
     "static/media/react.svg": "/static/media/react.10cc989e5112bbc80afa32af6456e859.svg",
     "static/media/quote.svg": "/static/media/quote.6224afbed64645b1a38f6ad5b9795bda.svg",
     "static/media/tick-done.svg": "/static/media/tick-done.ba0d6a2fe8a3cc61aac9d74d7cbbb8ad.svg",
-    "main.1c5dc42b.css.map": "/static/css/main.1c5dc42b.css.map",
-    "main.c5a51816.js.map": "/static/js/main.c5a51816.js.map"
+    "main.a5a6f513.css.map": "/static/css/main.a5a6f513.css.map",
+    "main.93e91297.js.map": "/static/js/main.93e91297.js.map"
   },
   "entrypoints": [
-    "static/css/main.1c5dc42b.css",
-    "static/js/main.c5a51816.js"
+    "static/css/main.a5a6f513.css",
+    "static/js/main.93e91297.js"
   ]
 }

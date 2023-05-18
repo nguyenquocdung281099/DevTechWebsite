@@ -9,21 +9,29 @@ import Avatar from "../../assets/logo-color.png";
 import QCCourse from "./component/QCCourse";
 import { Helmet } from "react-helmet";
 
-const codeLogin = `import { GoogleLogout } from "react-google-login";
-function Logout() {
-  const logoutHandler = () => {
-    console.log('successfully logged out!);
+const codeLogin = `import React from "react";
+import { GoogleLogin } from "react-google-login";
+
+const CLIENT_ID = "YOUR_CLIENT_ID_HERE";
+
+function Login() {
+  const responseGoogle = (response: any) => {
+    console.log(response.accessToken);
   };
   return (
-    <GoogleLogout
-      clientId={CLIENT_ID}
-      buttonText="Logout"
-      onLogoutSuccess={logoutHandler}
-    />
+    <div className="App">
+      <GoogleLogin
+        clientId={CLIENT_ID}
+        buttonText="Login"
+        onSuccess={responseGoogle}
+        onFailure={responseGoogle}
+        cookiePolicy={"single_host_origin"}
+      />
+    </div>
   );
 }
 
-export default Logout;
+export default Login;
 `;
 
 const codeLogin2 = `import { useState } from "react";
@@ -85,6 +93,7 @@ export default Logout;`;
 
 export default function BlogAuthGoogleWithReact() {
   useEffect(() => {
+    window.scrollTo(0, 0);
     const canvas = document.querySelector("canvas");
     canvas.remove();
     return () => {
@@ -92,7 +101,7 @@ export default function BlogAuthGoogleWithReact() {
       para.className = "canvas-bg";
       document.getElementsByClassName("app")[0].appendChild(para);
     };
-  });
+  }, []);
 
   return (
     <div className="wrapper blog-detail-wrapper">
@@ -113,7 +122,10 @@ export default function BlogAuthGoogleWithReact() {
           property="og:description"
           content="devfe-blog, đăng nhập google với reactJs, login google with reactjs, tương tác với google driver, youtube bằng reactjs"
         />
-        <meta property="og:image" content={Avatar} />
+        <meta
+          property="og:image"
+          content="https://i.stack.imgur.com/9EHtN.png"
+        />
       </Helmet>
       <article className="article-content">
         <header>
