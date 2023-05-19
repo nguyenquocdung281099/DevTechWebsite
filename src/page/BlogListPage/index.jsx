@@ -3,6 +3,7 @@ import { useEffect } from "react";
 import "./styles.scss";
 import { Link } from "@reach/router";
 import { Helmet } from "react-helmet";
+import { listBlog } from "./constant";
 export default function Blogs() {
   useEffect(() => {
     const canvas = document.querySelector("canvas");
@@ -44,34 +45,38 @@ export default function Blogs() {
         <div className="header-background"></div>
       </header>
       <main className="card-list">
-        <div class="card text-white">
-          <div class="card-img-block">
-            <div className="date">
-              <div className="day">29</div>
-              <div className="month">Jan</div>
+        {" "}
+        {listBlog.map((item) => (
+          <div class="card text-white">
+            <div class="card-img-block">
+              <div className="date">
+                <div className="day">{item.date}</div>
+                <div className="month">{item.month}</div>
+              </div>
+              <img
+                src="https://global-uploads.webflow.com/63691faa82ea4c4778ce2111/63e00c8b6bf1b1fa15804578_05.%20What%20is%20dydx-min-p-1080.png"
+                alt="Card_course"
+                class="card-img"
+              />
             </div>
-            <img
-              src="https://global-uploads.webflow.com/63691faa82ea4c4778ce2111/63e00c8b6bf1b1fa15804578_05.%20What%20is%20dydx-min-p-1080.png"
-              alt="Card_course"
-              class="card-img"
-            />
-          </div>
-          <div class="card-content">
-            <div className="tags">
-              <div className="tag-course">FRONTEND</div>
-              <div className="tag-course">BACKEND</div>
+            <div class="card-content">
+              <div className="tags">
+                {
+                  item.tags.map((tag) => <div className="tag-course">{tag}</div>)
+                }
+              </div>
+              <h3 className="text-purple">{item.name}</h3>
             </div>
-            <h3 className="text-purple">Google Authentication with React</h3>
+            <div class="card-action">
+              <Link to={item.url} class="btn">
+                <i class="fas fa-play text-white"></i> Đọc bài viết
+              </Link>
+              <span>
+                <i class="far fa-clock"></i> {item.time}min
+              </span>
+            </div>
           </div>
-          <div class="card-action">
-            <Link to="/blog/authentication-google-voi-react" class="btn">
-              <i class="fas fa-play text-white"></i> Đọc bài viết
-            </Link>
-            <span>
-              <i class="far fa-clock"></i> 5min
-            </span>
-          </div>
-        </div>
+        ))}
       </main>
       <div className="pagi">
         Showing <span>1</span> of 1

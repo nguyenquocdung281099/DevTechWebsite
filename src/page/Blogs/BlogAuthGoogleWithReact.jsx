@@ -1,7 +1,5 @@
-import { Link } from "@reach/router";
 import "./styles.scss";
 import { useEffect } from "react";
-import CourseReactImg from "../../assets/react-course.jpg";
 import PrismCode from "react-prism";
 import "prismjs";
 import "prismjs/components/prism-jsx.min";
@@ -113,7 +111,7 @@ export default function BlogAuthGoogleWithReact() {
         />
         <title>Đăng nhập google với ReactJS</title>
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://metatags.io/" />
+        <meta property="og:url" content="https://devfe-edu.netlify.app/blog/authentication-google-voi-react" />
         <meta
           property="og:title"
           content="Đăng nhập google với ReactJS chỉ với 5 phút"

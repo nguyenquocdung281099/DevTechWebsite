@@ -65,6 +65,9 @@
           font-weight: 300;
           position: relative;
           z-index: 2;
+
+          li {
+          }
         }
 
         .bg-key {
@@ -248,7 +251,9 @@
 
 .title-blog {
   font-size: 25px;
+  margin: 18px 0;
 }
+
 /**
  * Dracula Theme originally by Zeno Rocha [@zenorocha]
  * https://draculatheme.com/

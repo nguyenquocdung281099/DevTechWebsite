@@ -8,6 +8,7 @@ import CourseQcTop from "./Components/CourseQcTop";
 import Social from "./Components/Social";
 import Blogs from "./page/BlogListPage";
 import BlogAuthGoogleWithReact from "./page/Blogs/BlogAuthGoogleWithReact";
+import OperatorJS from "./page/Blogs/OperatorJs";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         <CourseDetail path="course/react-chuyen-sau" />
         <Blogs path="/blog" />
         <BlogAuthGoogleWithReact path="/blog/authentication-google-voi-react" />
+        <OperatorJS path='/blog/nhung-cau-lenh-dieu-kien-javascript-quan-trong'/>
       </Router>
       <Footer />
 
