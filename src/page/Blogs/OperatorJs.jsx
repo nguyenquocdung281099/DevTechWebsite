@@ -55,65 +55,37 @@ console.log(user1 === user2); // false
 const basicOperator6 = `console.log(null == undefined) // true
 console.log(null === undefined) // false
 console.log(null == 0) // false
-console.log(null <= 0) // true bởi vì null gets converted into 0
+console.log(null <= 0) // true bởi null đc javascript convert về  0
 `;
 
-const codeLogin2 = `import { useState } from "react";
-import GoogleLogin, { GoogleLogout, GoogleLoginResponse, GoogleLoginResponseOffline } from "react-google-login";
+const basicOperator7 = `result = condition ? value1 : value2`;
 
-const CLIENT_ID = "//your-lient-id";
+const basicOperator8 = `console.log(true || true); // true
+console.log(true || false); // true
+console.log(false || true); // true
+console.log(false || false); // false
+console.log(true || true || true); // true
+console.log(true || false || true); // true
+console.log(false || true || false); // true
+console.log(false || false || false); // false`;
 
-const SCOPE = "https://www.googleapis.com/auth/drive";
+const basicOperator9 = `console.log(true && true); // true
+console.log(true && false); // false
+console.log(false && true); // false
+console.log(false && false); // false
+console.log(true && true && true); // true
+console.log(true && false && true); // false
+console.log(false && true && false); // false
+console.log(false && false && false); // false`;
 
-export const GoogleAuthentication = () => {
-  const [isSignedIn, setIsSignedIn] = useState(false);
+const basicOperator10 = `console.log(1 && 0); // 0 (giá trị falsy đầu tiên là 0)
+console.log(null && 2); // null (giá trị falsy đầu tiên là null)
+console.log(10 && "" && undefined && 0); // "" (giá trị falsy đầu tiên là "")
+console.log("n" && undefined && 10); // undefined (giá trị falsy đầu tiên là undefined)
+console.log(10 && "a"); // "a" (không có giá trị falsy, trả về giá trị cuối cùng)`;
 
-  const signOutHandler = () => {
-    console.log("logged out!");
-    setIsSignedIn(false);
-  };
-
-  const signInHandler = (response: GoogleLoginResponse | GoogleLoginResponseOffline) => {
-    console.log(response);
-    setIsSignedIn(true);
-  };
-
-  return (
-    <>
-      {isSignedIn ? (
-        <GoogleLogout clientId={CLIENT_ID} buttonText="Logout" onLogoutSuccess={signOutHandler} />
-      ) : (
-        <GoogleLogin
-          clientId={CLIENT_ID}
-          buttonText="Login"
-          onSuccess={signInHandler}
-          onFailure={signInHandler}
-          cookiePolicy={"single_host_origin"}
-          isSignedIn={true}
-          scope={SCOPE}
-        />
-      )}
-    </>
-  );
-};
-`;
-
-const codeLogOut = `import { GoogleLogout } from "react-google-login";
-
-function Logout() {
-  const logoutHandler = () => {
-    console.log('successfully logged out!);
-  };
-  return (
-    <GoogleLogout
-      clientId={CLIENT_ID}
-      buttonText="Logout"
-      onLogoutSuccess={logoutHandler}
-    />
-  );
-}
-
-export default Logout;`;
+const basicOperator11 = `console.log(!true); // false
+console.log(!false); // true`;
 
 export default function OperatorJS() {
   useEffect(() => {
@@ -170,6 +142,33 @@ export default function OperatorJS() {
             </div>
             <h3>DevFE</h3>
           </a>
+
+          <ul className="social-1">
+            <li class="instagram">
+              <a
+                href="https://www.tiktok.com/@devfe68"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <i class="fab fa-tiktok" aria-hidden="true"></i>
+              </a>
+            </li>
+            <li class="facebook">
+              <a
+                href="https://www.facebook.com/laptrinhwebdevfe/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <i class="fa fa-facebook" aria-hidden="true"></i>
+              </a>
+            </li>
+            <li class="instagram" target="_blank" rel="noreferrer">
+              <a href="https://instagram.com/devfe68?">
+                <i class="fa fa-instagram" aria-hidden="true"></i>
+              </a>
+            </li>
+          </ul>
+
           <QCCourse />
           <div className="key-hightlight">
             <h3 className="title-blog">Một số toán tử quan trọng</h3>
@@ -277,77 +276,126 @@ export default function OperatorJS() {
             <PrismCode
               component="pre"
               className="language-js"
-              children={basicOperator5}
+              children={basicOperator6}
             />
           </p>
           <h3 className="title-blog" id="3">
             3. Toán tử ba ngôi ?
           </h3>
           <p className="content-blog">
+            <img src="https://i0.wp.com/hocjavascript.net/wp-content/uploads/2021/02/Toan-tu-ba-ngoi-trong-JavaScript-1.png?w=478&ssl=1" />
             <PrismCode
               component="pre"
               className="language-js"
-              children={codeLogOut}
+              children={basicOperator7}
             />
-            Khi muốn sử dụng component này cho trang login và có thể dùng thêm
-            state để theo dõi trạng thái login. code cuối cùng sẽ giống như thế
-            này:
-            <PrismCode
-              component="pre"
-              className="language-js"
-              children={codeLogin2}
-            />
-            Và để muốn kết nối thêm với google driver hay youtube thì chúng ta
-            cần thêm 2 dịch vụ Youtobe API và Google API
-            <a
-              href="https://developers.google.com/oauthplayground/"
-              target="_blank"
-              rel="noreferrer"
-            >
-              ở đây
-            </a>
-            , và thêm scope cho chúng. ví dụ:
-            <PrismCode
-              component="pre"
-              className="language-js"
-              children={`GOOGLE_DRIVE_SCOPE = "https://www.googleapis.com/auth/drive";
-YOUTUBE_DATA_API_V3 = "https://www.googleapis.com/auth/youtube";`}
-            />
+            Nó sẽ hoạt động như sau: Nếu condition nó là đúng thì toán tử sẽ trả
+            về value 1 còn nếu là sai thì nó sẽ trả về giá trị của value 2. Đơn
+            giản phải không nào, nó sẽ giải quyết được một số If else đơn giản
+            đấy nhé.
           </p>
           <h3 className="title-blog" id="4">
             4. Toán tử logic
           </h3>
+          <h4 className="subtitle-blog">Toán tử OR (||)</h4>
           <p className="content-blog">
+            toán tử OR trả về giá trị true nếu có ít nhất một toán hạng là true,
+            ngược lại sẽ trả về false.
             <PrismCode
               component="pre"
               className="language-js"
-              children={codeLogOut}
+              children={basicOperator8}
             />
-            Khi muốn sử dụng component này cho trang login và có thể dùng thêm
-            state để theo dõi trạng thái login. code cuối cùng sẽ giống như thế
-            này:
+            Và các bước nó hoạt động sẽ như sau:
+            <ul>
+              <li>Thứ tự thực hiện từ trái sang phải.</li>
+              <li>
+                Lần lượt chuyển mỗi toán hạng về kiểu boolean
+                <ul>
+                  <li>
+                    Nếu kết quả là true thì trả về giá trị gốc của toán hạng đó
+                    và dừng lại.
+                  </li>
+                  <li>
+                    Nếu kết quả là false thì tiếp tục thực hiện với toán hạng
+                    tiếp theo.
+                  </li>
+                </ul>
+              </li>
+              <li>
+                Nếu không có giá trị truthy nào thì kết quả trả về là giá trị
+                của toán hạng cuối cùng.
+              </li>
+            </ul>
+            Oki, dễ rồi đúng không :v
+          </p>
+          <h4 className="subtitle-blog">Toán tử AND (&&)</h4>
+          <p className="content-blog">
+            toán tử AND trả về giá trị true nếu cả hai toán hạng là true, ngược
+            lại sẽ trả về false
             <PrismCode
               component="pre"
               className="language-js"
-              children={codeLogin2}
+              children={basicOperator9}
             />
-            Và để muốn kết nối thêm với google driver hay youtube thì chúng ta
-            cần thêm 2 dịch vụ Youtobe API và Google API
-            <a
-              href="https://developers.google.com/oauthplayground/"
-              target="_blank"
-              rel="noreferrer"
-            >
-              ở đây
-            </a>
-            , và thêm scope cho chúng. ví dụ:
+            Toán tử AND trong JavaScript sẽ tìm và trả về giá trị falsy đầu
+            tiên. Nếu không có giá trị falsy nào thì kết quả sẽ là giá trị của
+            toán hạng cuối cùng. Và các bước nó hoạt động sẽ như sau:
+            <ul>
+              <li>Thứ tự thực hiện từ trái sang phải.</li>
+              <li>
+                Lần lượt chuyển mỗi toán hạng về kiểu boolean
+                <ul>
+                  <li>
+                    Nếu kết quả là false thì trả về giá trị gốc của toán hạng đó
+                    và dừng lại.
+                  </li>
+                  <li>
+                    Nếu kết quả là true thì tiếp tục thực hiện với toán hạng
+                    tiếp theo.
+                  </li>
+                </ul>
+              </li>
+              <li>
+                Nếu không có giá trị falsy nào thì kết quả trả về là giá trị của
+                toán hạng cuối cùng.
+              </li>
+            </ul>
+            Thêm nhẹ 1 ví dụ nè:
             <PrismCode
               component="pre"
               className="language-js"
-              children={`GOOGLE_DRIVE_SCOPE = "https://www.googleapis.com/auth/drive";
-YOUTUBE_DATA_API_V3 = "https://www.googleapis.com/auth/youtube";`}
+              children={basicOperator10}
+            />
+            Oki, quá dễ
+          </p>
+          <h4 className="subtitle-blog">Toán tử NOT (!)</h4>
+          <p className="content-blog">
+            toán tử NOT trả về giá trị true nếu toán hạng là false và trả về
+            false nếu toán hạng là true. Vì là toán tử một ngôi, nên toán tử NOT
+            chỉ chứa một toán hạng. Không có gì bàn cãi nữa rồi, cãi táng liền
+            🥸
+            <PrismCode
+              component="pre"
+              className="language-js"
+              children={basicOperator11}
             />
           </p>
+          <h4 className="subtitle-blog">Toán tử Nullish coalescing (??)</h4>
+          <p className="content-blog">
+            Rồi, dài quá dài với 1 blog ngắn (vô tri quá 🤣 ) Mình cùng đến với
+            toán tử cuối cùng nhé. Toán tử Nullish Coalescing là toán tử hai
+            ngôi a ?? b, với định nghĩa là: Nếu a khác null và undefined thì kết
+            quả của a ?? b là a. Ngược lạị, nếu a bằng null hoặc undefined thì
+            kết quả của a ?? b là b.
+            <PrismCode
+              component="pre"
+              className="language-js"
+              children={`result = a ?? b;`}
+            />
+          </p>
+          Đây là những toán tử mà mình biết và thấy nó rất quan trọng đối với
+          mình, còn bạn thì sao, nếu có toán tử nào nữa, hãy góp ý cho mình nhé
           <p className="footer-blog">
             Chúc bạn có một ngày vui vẻ - happly coding - nếu có hứng thú, bạn
             có thể xem thêm những video của tôi tại kênh tiktok&nbsp;

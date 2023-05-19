@@ -63,4 +63,8 @@
     transform: rotate(360deg);
     transition: all 1s;
   }
+
+  @media only screen and (max-width: 780px) {
+    display: none;
+  }
 }

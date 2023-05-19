@@ -111,7 +111,10 @@ export default function BlogAuthGoogleWithReact() {
         />
         <title>Đăng nhập google với ReactJS</title>
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://devfe-edu.netlify.app/blog/authentication-google-voi-react" />
+        <meta
+          property="og:url"
+          content="https://devfe-edu.netlify.app/blog/authentication-google-voi-react"
+        />
         <meta
           property="og:title"
           content="Đăng nhập google với ReactJS chỉ với 5 phút"
@@ -141,6 +144,32 @@ export default function BlogAuthGoogleWithReact() {
             </div>
             <h3>DevFE</h3>
           </a>
+
+          <ul className="social-1">
+            <li class="instagram">
+              <a
+                href="https://www.tiktok.com/@devfe68"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <i class="fab fa-tiktok" aria-hidden="true"></i>
+              </a>
+            </li>
+            <li class="facebook">
+              <a
+                href="https://www.facebook.com/laptrinhwebdevfe/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <i class="fa fa-facebook" aria-hidden="true"></i>
+              </a>
+            </li>
+            <li class="instagram" target="_blank" rel="noreferrer">
+              <a href="https://instagram.com/devfe68?">
+                <i class="fa fa-instagram" aria-hidden="true"></i>
+              </a>
+            </li>
+          </ul>
           <QCCourse />
           <div className="key-hightlight">
             <h3 className="title-blog">Một số trường hợp có thể sử dụng</h3>

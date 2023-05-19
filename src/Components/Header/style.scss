@@ -102,7 +102,7 @@
 
     input[type="checkbox"]:checked ~ span:nth-of-type(1) {
       transform-origin: bottom;
-      transform: rotatez(45deg)  translate(7px, 1px);;
+      transform: rotatez(45deg) translate(7px, 1px);
     }
 
     input[type="checkbox"]:checked ~ span:nth-of-type(2) {
